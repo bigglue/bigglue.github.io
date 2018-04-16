@@ -1,0 +1,1282 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../lib/index.js"></script>
+      <script type="text/javascript" src="../../index.js"></script>
+      <script type="text/javascript" src="../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.bigglue" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bigglue"></a><a id="bigglue:bigglue"></a>
+      <span class="permalink">
+      <a href="index.html#bigglue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">bigglue</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="bigglue.examples" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="examples"></a><a id="examples:examples"></a>
+      <span class="permalink">
+      <a href="../bigglue/index.html#examples" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html">
+              <span class="name">examples</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="bigglue">bigglue</a></dd></dl></div>
+    </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Clone.html" title="This is a simple Mapper step that clones a GitID and gives back the GitRepo."></a>
+                        <a href="Clone.html" title="This is a simple Mapper step that clones a GitID and gives back the GitRepo.">
+                          Clone
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="" title="This is a simple Mapper step that takes a GitRepo and gives back the GitCommits and the GitCommitInfos that we need."></a>
+                        <a href="" title="This is a simple Mapper step that takes a GitRepo and gives back the GitCommits and the GitCommitInfos that we need.">
+                          CommitExtraction
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="FindAuthor.html" title="This is a simple Reducer step that takes the GitCommitInfo, finds the author, and increments their commit value."></a>
+                        <a href="FindAuthor.html" title="This is a simple Reducer step that takes the GitCommitInfo, finds the author, and increments their commit value.">
+                          FindAuthor
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="GitCommitGroupSerializer$.html" title="A JsonSerializer for GitCommitGroups
+"></a>
+                        <a href="GitCommitGroupSerializer$.html" title="A JsonSerializer for GitCommitGroups
+">
+                          GitCommitGroupSerializer
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="GitCommitGroups.html" title="The Identifiable of which author created how many commits."></a>
+                        <a href="GitCommitGroups.html" title="The Identifiable of which author created how many commits.">
+                          GitCommitGroups
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="GitCommitInfo.html" title="An Identifiable for a Commit of a GitRepo, with the hash and the person that created it."></a>
+                        <a href="GitCommitInfo.html" title="An Identifiable for a Commit of a GitRepo, with the hash and the person that created it.">
+                          GitCommitInfo
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="GitCommitInfoSerializer$.html" title="A JsonSerializer for a GitCommitInfo."></a>
+                        <a href="GitCommitInfoSerializer$.html" title="A JsonSerializer for a GitCommitInfo.">
+                          GitCommitInfoSerializer
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="GitFeatures.html" title=""></a>
+                        <a href="GitFeatures.html" title="">
+                          GitFeatures
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo."></a>
+                        <a href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo.">
+                          GitID
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="GitIDSerializer$.html" title="The JsonSerializer for GitIDs."></a>
+                        <a href="GitIDSerializer$.html" title="The JsonSerializer for GitIDs.">
+                          GitIDSerializer
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="GitRepo.html" title="An Identifiable that represents a Git Repo."></a>
+                        <a href="GitRepo.html" title="An Identifiable that represents a Git Repo.">
+                          GitRepo
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="GitRepoSerializer$.html" title="A JsonSerializer for GitRepos."></a>
+                        <a href="GitRepoSerializer$.html" title="A JsonSerializer for GitRepos.">
+                          GitRepoSerializer
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18."></a>
+                        <a href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18.">
+                          MockProtocol2
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="NestedWithGitRepo$.html" title="For Solr, we have to make sure that the JSON is completely flat."></a>
+                        <a href="NestedWithGitRepo$.html" title="For Solr, we have to make sure that the JSON is completely flat.">
+                          NestedWithGitRepo
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="mockfixrexample$.html" title="This is the actual code for the simple example."></a>
+                        <a href="mockfixrexample$.html" title="This is the actual code for the simple example.">
+                          mockfixrexample
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <div class="big-circle class">c</div>
+        <p id="owner"><a href="../index.html" class="extype" name="bigglue">bigglue</a>.<a href="index.html" class="extype" name="bigglue.examples">examples</a></p>
+        <h1>CommitExtraction<span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CommitExtraction</span><span class="params">()</span><span class="result"> extends <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>] with <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This is a simple <span class="extype" name="Mapper">Mapper</span> step that takes a <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a> and gives back the GitCommits and the <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>s that we need.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a>, <a href="http://www.scala-lang.org/api/2.12.3/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a>, <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../checkers/UnaryChecker.html" class="extype" name="bigglue.checkers.UnaryChecker">UnaryChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../checkers/OutputStoreChecker.html" class="extype" name="bigglue.checkers.OutputStoreChecker">OutputStoreChecker</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>], <a href="../checkers/ConfigChecker.html" class="extype" name="bigglue.checkers.ConfigChecker">ConfigChecker</a>, <a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a>, <a href="../configurations/ConfigBuildsPlatform.html" class="extype" name="bigglue.configurations.ConfigBuildsPlatform">ConfigBuildsPlatform</a>, <a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a>[<a href="../configurations/PlatformBuilder.html" class="extype" name="bigglue.configurations.PlatformBuilder">PlatformBuilder</a>], <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="bigglue.examples.CommitExtraction"><span>CommitExtraction</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="bigglue.computations.Mapper"><span>Mapper</span></li><li class="in" name="bigglue.computations.UnaryComputation"><span>UnaryComputation</span></li><li class="in" name="bigglue.checkers.UnaryChecker"><span>UnaryChecker</span></li><li class="in" name="bigglue.checkers.OutputStoreChecker"><span>OutputStoreChecker</span></li><li class="in" name="bigglue.checkers.InputStoreChecker"><span>InputStoreChecker</span></li><li class="in" name="bigglue.checkers.ConfigChecker"><span>ConfigChecker</span></li><li class="in" name="bigglue.computations.Computation"><span>Computation</span></li><li class="in" name="bigglue.configurations.ConfigBuildsPlatform"><span>ConfigBuildsPlatform</span></li><li class="in" name="bigglue.configurations.ConfigBuilds"><span>ConfigBuilds</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+                  <span class="filtertype">Implicitly<br />
+                  </span>
+                  <ol id="implicits"> <li class="in" name="scala.Predef.any2stringadd" data-hidden="true"><span>by any2stringadd</span></li><li class="in" name="scala.Predef.StringFormat" data-hidden="true"><span>by StringFormat</span></li><li class="in" name="scala.Predef.Ensuring" data-hidden="true"><span>by Ensuring</span></li><li class="in" name="scala.Predef.ArrowAssoc" data-hidden="true"><span>by ArrowAssoc</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="bigglue.examples.CommitExtraction#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():bigglue.examples.CommitExtraction"></a><a id="&lt;init&gt;:CommitExtraction"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#&lt;init&gt;():bigglue.examples.CommitExtraction" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CommitExtraction</span><span class="params">()</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Predef.any2stringadd#+" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="+(other:String):String"></a><a id="+(String):String"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#+(other:String):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus" class="implicit">+</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method any2stringadd in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>any2stringadd</dd></dl></div>
+    </li><li name="bigglue.computations.Mapper#--&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="--&gt;[End&lt;:bigglue.data.Identifiable[End]](p:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.PartialMapperPipe[Input,Output,End]"></a><a id="--&gt;[End&lt;:Identifiable[End]](Pipe[GitCommitInfo,End]):PartialMapperPipe[GitRepo,GitCommitInfo,End]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#--&gt;[End&lt;:bigglue.data.Identifiable[End]](p:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.PartialMapperPipe[Input,Output,End]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="tparams">[<span name="End">End &lt;: <a href="../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>]</span><span class="params">(<span name="p">p: <a href="../pipes/Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>, <span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>)</span><span class="result">: <a href="../pipes/PartialMapperPipe.html" class="extype" name="bigglue.pipes.PartialMapperPipe">PartialMapperPipe</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>, <span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">This is part of the series of function calls that make the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This is part of the series of function calls that make the pipeline. In the example, this is called when stating (Clone()--&gt;clonedMap) or (CommitExtraction()--&gt;commitInfoMap).
+Simply put, this creates a part of the pipeline that connects the mapper to the output data store and the rest of the
+pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End</dt><dd class="cmt"><p>The type of data store that is at the end of the pipeline. In the example, this would be <a href="GitCommitGroups.html" class="extype" name="bigglue.examples.GitCommitGroups">bigglue.examples.GitCommitGroups</a></p></dd><dt class="param">p</dt><dd class="cmt"><p>The part of the pipe that follows the mapper computation. In the example, for Clone() it's clonedMap:--CommitExtraction()--&gt;commitInfoMap:-+FindAuthor()+-&gt;authorMap,
+         and for BB it's commitInfoMap:-+FindAuthor()+-&gt;authorMap.</p></dd><dt>returns</dt><dd class="cmt"><p>A <span class="extype" name="PartialMapperPipe">PartialMapperPipe</span> which links the mapper together with the pipe that starts with the output data store.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
+    </li><li name="scala.Predef.ArrowAssoc#-&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="-&gt;[B](y:B):(A,B)"></a><a id="-&gt;[B](B):(CommitExtraction,B)"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#-&gt;[B](y:B):(A,B)" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>, <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method ArrowAssoc in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="bigglue.checkers.UnaryChecker#check" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="check(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="check(PipeConfig,DataStore[GitRepo],DataStore[GitCommitInfo]):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#check(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">check</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Check routine for unary data processors
+</p><div class="fullcomment"><div class="comment cmt"><p>Check routine for unary data processors
+</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>the config file to check</p></dd><dt class="param">inputMap</dt><dd class="cmt"><p>the input store to check</p></dd><dt class="param">outputMap</dt><dd class="cmt"><p>the output store to check</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../checkers/UnaryChecker.html" class="extype" name="bigglue.checkers.UnaryChecker">UnaryChecker</a></dd></dl></div>
+    </li><li name="bigglue.checkers.ConfigChecker#checkConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkConfig(conf:bigglue.configurations.PipeConfig):Unit"></a><a id="checkConfig(PipeConfig):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#checkConfig(conf:bigglue.configurations.PipeConfig):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">checkConfig</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Check that paths in configuration file relevant to host class are well-formed.</p><div class="fullcomment"><div class="comment cmt"><p>Check that paths in configuration file relevant to host class are well-formed. Default does nothing.
+</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>the config file to check</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../checkers/ConfigChecker.html" class="extype" name="bigglue.checkers.ConfigChecker">ConfigChecker</a></dd></dl></div>
+    </li><li name="bigglue.checkers.InputStoreChecker#checkInput" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkInput(inputMap:bigglue.store.DataStore[Input]):Unit"></a><a id="checkInput(DataStore[GitRepo]):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#checkInput(inputMap:bigglue.store.DataStore[Input]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">checkInput</span><span class="params">(<span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Check that input store is compatible with the host class.</p><div class="fullcomment"><div class="comment cmt"><p>Check that input store is compatible with the host class. Default does nothing.
+</p></div><dl class="paramcmts block"><dt class="param">inputMap</dt><dd class="cmt"><p>the input store to check</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a></dd></dl></div>
+    </li><li name="bigglue.checkers.OutputStoreChecker#checkOutput" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkOutput(outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="checkOutput(DataStore[GitCommitInfo]):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#checkOutput(outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">checkOutput</span><span class="params">(<span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Check that output store is compatible with the host class.</p><div class="fullcomment"><div class="comment cmt"><p>Check that output store is compatible with the host class. Default does nothing.
+</p></div><dl class="paramcmts block"><dt class="param">outputMap</dt><dd class="cmt"><p>the output store to check</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../checkers/OutputStoreChecker.html" class="extype" name="bigglue.checkers.OutputStoreChecker">OutputStoreChecker</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="bigglue.configurations.ConfigBuilds#configOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="configOpt:Option[bigglue.configurations.PipeConfig]"></a><a id="configOpt:Option[PipeConfig]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#configOpt:Option[bigglue.configurations.PipeConfig]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">configOpt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a></dd></dl></div>
+    </li><li name="bigglue.computations.Computation#configOption" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="configOption:bigglue.configurations.ConfOpt"></a><a id="configOption:ConfOpt"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#configOption:bigglue.configurations.ConfOpt" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">configOption</span><span class="result">: <a href="../configurations/ConfOpt.html" class="extype" name="bigglue.configurations.ConfOpt">ConfOpt</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="bigglue.configurations.ConfigBuildsPlatform#constructBuilder" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="constructBuilder(config:bigglue.configurations.PipeConfig):bigglue.configurations.PlatformBuilder"></a><a id="constructBuilder(PipeConfig):PlatformBuilder"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#constructBuilder(config:bigglue.configurations.PipeConfig):bigglue.configurations.PlatformBuilder" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">constructBuilder</span><span class="params">(<span name="config">config: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a> = <span class="symbol">null</span></span>)</span><span class="result">: <a href="../configurations/PlatformBuilder.html" class="extype" name="bigglue.configurations.PlatformBuilder">PlatformBuilder</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../configurations/ConfigBuildsPlatform.html" class="extype" name="bigglue.configurations.ConfigBuildsPlatform">ConfigBuildsPlatform</a> → <a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a></dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a><a id="ensuring((CommitExtraction)⇒Boolean,⇒Any):CommitExtraction"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:A=&gt;Boolean):A"></a><a id="ensuring((CommitExtraction)⇒Boolean):CommitExtraction"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:A=&gt;Boolean):A" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:Boolean,msg:=&gt;Any):A"></a><a id="ensuring(Boolean,⇒Any):CommitExtraction"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:Boolean,msg:=&gt;Any):A" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ensuring(cond:Boolean):A"></a><a id="ensuring(Boolean):CommitExtraction"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:Boolean):A" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Predef.StringFormat#formatted" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formatted(fmtstr:String):String"></a><a id="formatted(String):String"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#formatted(fmtstr:String):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="implicit">formatted</span><span class="params">(<span name="fmtstr">fmtstr: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method StringFormat in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>StringFormat</dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="bigglue.configurations.ConfigBuilds#getConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getConfig(config:bigglue.configurations.PipeConfig):bigglue.configurations.PipeConfig"></a><a id="getConfig(PipeConfig):PipeConfig"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#getConfig(config:bigglue.configurations.PipeConfig):bigglue.configurations.PipeConfig" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getConfig</span><span class="params">(<span name="config">config: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>)</span><span class="result">: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a></dd></dl></div>
+    </li><li name="bigglue.computations.Mapper#getOp" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getOp:Input=&gt;List[Output]"></a><a id="getOp:(GitRepo)⇒List[GitCommitInfo]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#getOp:Input=&gt;List[Output]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getOp</span><span class="result">: (<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>) ⇒ <span class="extype" name="scala.List">List</span>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
+    </li><li name="bigglue.computations.UnaryComputation#getUnaryPlatform" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getUnaryPlatform():bigglue.platforms.UnaryPlatform[Input,Output]"></a><a id="getUnaryPlatform():UnaryPlatform[GitRepo,GitCommitInfo]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#getUnaryPlatform():bigglue.platforms.UnaryPlatform[Input,Output]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUnaryPlatform</span><span class="params">()</span><span class="result">: <a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
+    </li><li name="bigglue.computations.Mapper#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="init(PipeConfig,DataStore[GitRepo],DataStore[GitCommitInfo]):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">init</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This initializes the mapper computation.</p><div class="fullcomment"><div class="comment cmt"><p>This initializes the mapper computation.
+It creates a <span class="extype" name="UnaryPlatform">UnaryPlatform</span> with <span class="extype" name="PlatformBuilder.mapperPlatform">PlatformBuilder.mapperPlatform</span>, then sets itself as the platform's computation,
+and then initializes the platform with <span class="extype" name="UnaryPlatform.init">UnaryPlatform.init</span>.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file to build from.
+            Note: If there is a GitIDs--&gt;GitRepos section or GitRepos--&gt;GitCommitInfo section in the bigglue section of the configuration file,
+            it will overwrite part of the configuration file with the values within the step's section.
+            You can see this in effect with GitIDs--&gt;GitRepos, which changes the connector from an <a href="../connectors/instances/IncrTrackerJobQueue.html" class="extype" name="bigglue.connectors.instances.IncrTrackerJobQueue">bigglue.connectors.instances.IncrTrackerJobQueue</a> to a <a href="../connectors/instances/JobQueue.html" class="extype" name="bigglue.connectors.instances.JobQueue">bigglue.connectors.instances.JobQueue</a>.</p></dd><dt class="param">inputMap</dt><dd class="cmt"><p>The <span class="extype" name="DataStore">DataStore</span> that data is being sent in from.
+                Within the example, for gitID:--Clone()--&gt;clonedMap, this would be gitID. Likewise, for clonedMap:--CommitExtraction()--&gt;commitInfoMap, this would be clonedMap.
+                Both of these Data Stores are <a href="../store/instances/solr/SolrDataMap.html" class="extype" name="bigglue.store.instances.solr.SolrDataMap">bigglue.store.instances.solr.SolrDataMap</a> within the example.</p></dd><dt class="param">outputMap</dt><dd class="cmt"><p>The <span class="extype" name="DataStore">DataStore</span> that data is being sent to after computation.
+                 Within the example, for gitID:--Clone()--&gt;clonedMap, this would be clonedMap. Likewise, for clonedMap:--CommitExtraction()--&gt;commitInfoMap, this would be commitInfoMap.
+                 Both of these Data Stores are <a href="../store/instances/solr/SolrDataMap.html" class="extype" name="bigglue.store.instances.solr.SolrDataMap">bigglue.store.instances.solr.SolrDataMap</a> within the example.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
+    </li><li name="bigglue.computations.UnaryComputation#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output],platform:bigglue.platforms.UnaryPlatform[Input,Output]):Unit"></a><a id="init(PipeConfig,DataStore[GitRepo],DataStore[GitCommitInfo],UnaryPlatform[GitRepo,GitCommitInfo]):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output],platform:bigglue.platforms.UnaryPlatform[Input,Output]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">init</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>, <span name="platform">platform: <a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This connects the newly initialized platform to the Input Data Store by making it so the Input Data Store
+sends data down to the platform.</p><div class="fullcomment"><div class="comment cmt"><p>This connects the newly initialized platform to the Input Data Store by making it so the Input Data Store
+sends data down to the platform.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file.</p></dd><dt class="param">inputMap</dt><dd class="cmt"><p>The Input Data Store</p></dd><dt class="param">outputMap</dt><dd class="cmt"><p>The Output Data Store</p></dd><dt class="param">platform</dt><dd class="cmt"><p>The Platform added by the <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a> or <a href="../computations/Reducer.html" class="extype" name="bigglue.computations.Reducer">Reducer</a> computations.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
+    </li><li name="bigglue.computations.Computation#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="init(config:bigglue.configurations.PipeConfig,platform:bigglue.platforms.Platform):Unit"></a><a id="init(PipeConfig,Platform):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#init(config:bigglue.configurations.PipeConfig,platform:bigglue.platforms.Platform):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">init</span><span class="params">(<span name="config">config: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="platform">platform: <a href="../platforms/Platform.html" class="extype" name="bigglue.platforms.Platform">Platform</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="bigglue.computations.UnaryComputation#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name(newName:String):bigglue.computations.UnaryComputation[Input,Output]"></a><a id="name(String):UnaryComputation[GitRepo,GitCommitInfo]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#name(newName:String):bigglue.computations.UnaryComputation[Input,Output]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="params">(<span name="newName">newName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
+    </li><li name="bigglue.computations.UnaryComputation#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#name:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="bigglue.computations.Computation#persist" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="persist():Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#persist():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">persist</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">If the computation has been initialized, it calls <span class="extype" name="Platform.persist">Platform.persist</span> on the platform.</p><div class="fullcomment"><div class="comment cmt"><p>If the computation has been initialized, it calls <span class="extype" name="Platform.persist">Platform.persist</span> on the platform.
+This gives the platform the responsibility of what data to send/resend down the pipeline.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="bigglue.computations.Computation#platformOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="platformOpt:Option[bigglue.platforms.Platform]"></a><a id="platformOpt:Option[Platform]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#platformOpt:Option[bigglue.platforms.Platform]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">platformOpt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../platforms/Platform.html" class="extype" name="bigglue.platforms.Platform">Platform</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="bigglue.computations.Mapper#run" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run():Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#run():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a> → <a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="bigglue.configurations.ConfigBuilds#setConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setConfig(pipeConfig:bigglue.configurations.PipeConfig):Unit"></a><a id="setConfig(PipeConfig):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#setConfig(pipeConfig:bigglue.configurations.PipeConfig):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setConfig</span><span class="params">(<span name="pipeConfig">pipeConfig: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="bigglue.computations.Computation#terminate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="terminate():Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#terminate():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">terminate</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="bigglue.computations.Computation#toStep" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toStep(conf:bigglue.configurations.PipeConfig,step:String):bigglue.configurations.PipeConfig"></a><a id="toStep(PipeConfig,String):PipeConfig"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#toStep(conf:bigglue.configurations.PipeConfig,step:String):bigglue.configurations.PipeConfig" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toStep</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="step">step: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="bigglue.computations.Mapper#tryCompute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryCompute(input:Input):Option[List[Output]]"></a><a id="tryCompute(GitRepo):Option[List[GitCommitInfo]]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#tryCompute(input:Input):Option[List[Output]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryCompute</span><span class="params">(<span name="input">input: <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.List">List</span>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Given an input, this attempts to compute the list of outputs, stamp it with the version of the computation,
+give it provenance information, and then put it in the output map to be sent further down the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>Given an input, this attempts to compute the list of outputs, stamp it with the version of the computation,
+give it provenance information, and then put it in the output map to be sent further down the pipeline.
+Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Identity[Output]):bigglue.data.Identity[Output]" class="extmbr" name="bigglue.curators.VersionCurator#stampVersion">bigglue.curators.VersionCurator.stampVersion</a>, <a href="../curators/ProvenanceCurator.html#reportProvenance(src:Input,target:Output):Unit" class="extmbr" name="bigglue.curators.ProvenanceCurator#reportProvenance">bigglue.curators.ProvenanceCurator.reportProvenance</a>, and <span class="extype" name="DataStore.put">DataStore.put</span>.</p></div><dl class="paramcmts block"><dt class="param">input</dt><dd class="cmt"><p>The input that needs to be computed.</p></dd><dt>returns</dt><dd class="cmt"><p>If the computation succeeded, the list of outputs that were produced by the input.
+        If the computation didn't succeed, it report the error and returns None.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
+    </li><li name="bigglue.computations.UnaryComputation#unaryPlatformOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unaryPlatformOpt:Option[bigglue.platforms.UnaryPlatform[Input,Output]]"></a><a id="unaryPlatformOpt:Option[UnaryPlatform[GitRepo,GitCommitInfo]]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#unaryPlatformOpt:Option[bigglue.platforms.UnaryPlatform[Input,Output]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unaryPlatformOpt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
+    </li><li name="bigglue.computations.Computation#versionOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="versionOpt:Option[String]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#versionOpt:Option[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">versionOpt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.3/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.3/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.3/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="bigglue.computations.Mapper#withConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withConfig(newConfigOption:bigglue.configurations.ConfOpt):bigglue.computations.Mapper[Input,Output]"></a><a id="withConfig(ConfOpt):Mapper[GitRepo,GitCommitInfo]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#withConfig(newConfigOption:bigglue.configurations.ConfOpt):bigglue.computations.Mapper[Input,Output]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withConfig</span><span class="params">(<span name="newConfigOption">newConfigOption: <a href="../configurations/ConfOpt.html" class="extype" name="bigglue.configurations.ConfOpt">ConfOpt</a></span>)</span><span class="result">: <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
+    </li><li name="scala.Predef.ArrowAssoc#→" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="→[B](y:B):(A,B)"></a><a id="→[B](B):(CommitExtraction,B)"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/CommitExtraction.html#→[B](y:B):(A,B)" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>, <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method ArrowAssoc in scala.Predef.
+            
+          </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.3/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a></h3>
+            </div><div class="parent" name="bigglue.computations.Mapper">
+              <h3>Inherited from <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+            </div><div class="parent" name="bigglue.computations.UnaryComputation">
+              <h3>Inherited from <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+            </div><div class="parent" name="bigglue.checkers.UnaryChecker">
+              <h3>Inherited from <a href="../checkers/UnaryChecker.html" class="extype" name="bigglue.checkers.UnaryChecker">UnaryChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+            </div><div class="parent" name="bigglue.checkers.OutputStoreChecker">
+              <h3>Inherited from <a href="../checkers/OutputStoreChecker.html" class="extype" name="bigglue.checkers.OutputStoreChecker">OutputStoreChecker</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+            </div><div class="parent" name="bigglue.checkers.InputStoreChecker">
+              <h3>Inherited from <a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</h3>
+            </div><div class="parent" name="bigglue.checkers.ConfigChecker">
+              <h3>Inherited from <a href="../checkers/ConfigChecker.html" class="extype" name="bigglue.checkers.ConfigChecker">ConfigChecker</a></h3>
+            </div><div class="parent" name="bigglue.computations.Computation">
+              <h3>Inherited from <a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></h3>
+            </div><div class="parent" name="bigglue.configurations.ConfigBuildsPlatform">
+              <h3>Inherited from <a href="../configurations/ConfigBuildsPlatform.html" class="extype" name="bigglue.configurations.ConfigBuildsPlatform">ConfigBuildsPlatform</a></h3>
+            </div><div class="parent" name="bigglue.configurations.ConfigBuilds">
+              <h3>Inherited from <a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a>[<a href="../configurations/PlatformBuilder.html" class="extype" name="bigglue.configurations.PlatformBuilder">PlatformBuilder</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+            </div>
+        <div class="conversion" name="scala.Predef.any2stringadd">
+              <h3>Inherited by implicit conversion any2stringadd from
+                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+              </h3>
+            </div><div class="conversion" name="scala.Predef.StringFormat">
+              <h3>Inherited by implicit conversion StringFormat from
+                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+              </h3>
+            </div><div class="conversion" name="scala.Predef.Ensuring">
+              <h3>Inherited by implicit conversion Ensuring from
+                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+              </h3>
+            </div><div class="conversion" name="scala.Predef.ArrowAssoc">
+              <h3>Inherited by implicit conversion ArrowAssoc from
+                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+              </h3>
+            </div>
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
