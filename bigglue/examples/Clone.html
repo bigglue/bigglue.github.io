@@ -109,14 +109,14 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="bigglue">bigglue</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Clone.html" title="This is a simple Mapper step that clones a GitID and gives back the GitRepo."></a>
-                        <a href="Clone.html" title="This is a simple Mapper step that clones a GitID and gives back the GitRepo.">
+                        <a class="class" href="" title="This is a simple Mapper step that clones a GitID and gives back the GitRepo."></a>
+                        <a href="" title="This is a simple Mapper step that clones a GitID and gives back the GitRepo.">
                           Clone
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="" title="This is a simple Mapper step that takes a GitRepo and gives back the GitCommits and the GitCommitInfos that we need."></a>
-                        <a href="" title="This is a simple Mapper step that takes a GitRepo and gives back the GitCommits and the GitCommitInfos that we need.">
+                        <a class="class" href="CommitExtraction.html" title="This is a simple Mapper step that takes a GitRepo and gives back the GitCommits and the GitCommitInfos that we need."></a>
+                        <a href="CommitExtraction.html" title="This is a simple Mapper step that takes a GitRepo and gives back the GitCommits and the GitCommitInfos that we need.">
                           CommitExtraction
                         </a>
                       </li><li class="current-entities indented2">
@@ -153,12 +153,6 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="GitFeatures.html" title=""></a>
-                        <a href="GitFeatures.html" title="">
-                          GitFeatures
-                        </a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
                         <a class="class" href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo."></a>
                         <a href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo.">
                           GitID
@@ -183,8 +177,10 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18."></a>
-                        <a href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18.">
+                        <a class="object" href="MockProtocol2$.html" title="This
+"></a>
+                        <a href="MockProtocol2$.html" title="This
+">
                           MockProtocol2
                         </a>
                       </li><li class="current-entities indented2">
@@ -195,8 +191,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="mockfixrexample$.html" title="This is the actual code for the simple example."></a>
-                        <a href="mockfixrexample$.html" title="This is the actual code for the simple example.">
+                        <a class="object" href="mockfixrexample$.html" title="This is an example that was created to get a glimpse of BigGlue."></a>
+                        <a href="mockfixrexample$.html" title="This is an example that was created to get a glimpse of BigGlue.">
                           mockfixrexample
                         </a>
                       </li>
@@ -208,8 +204,8 @@
       <div id="definition">
         <div class="big-circle class">c</div>
         <p id="owner"><a href="../index.html" class="extype" name="bigglue">bigglue</a>.<a href="index.html" class="extype" name="bigglue.examples">examples</a></p>
-        <h1>CommitExtraction<span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html" title="Permalink">
+        <h1>Clone<span class="permalink">
+      <a href="../../bigglue/examples/Clone.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -222,17 +218,17 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">CommitExtraction</span><span class="params">()</span><span class="result"> extends <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>] with <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">Clone</span><span class="params">(<span name="repoFolderLocation">repoFolderLocation: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;mockfixrexample/repos&quot;</span></span>)</span><span class="result"> extends <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>] with <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This is a simple <span class="extype" name="Mapper">Mapper</span> step that takes a <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a> and gives back the GitCommits and the <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>s that we need.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This is a simple <span class="extype" name="Mapper">Mapper</span> step that clones a <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a> and gives back the <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>.
 </p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a>, <a href="http://www.scala-lang.org/api/2.12.3/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a>, <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../checkers/UnaryChecker.html" class="extype" name="bigglue.checkers.UnaryChecker">UnaryChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../checkers/OutputStoreChecker.html" class="extype" name="bigglue.checkers.OutputStoreChecker">OutputStoreChecker</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>], <a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>], <a href="../checkers/ConfigChecker.html" class="extype" name="bigglue.checkers.ConfigChecker">ConfigChecker</a>, <a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a>, <a href="../configurations/ConfigBuildsPlatform.html" class="extype" name="bigglue.configurations.ConfigBuildsPlatform">ConfigBuildsPlatform</a>, <a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a>[<a href="../configurations/PlatformBuilder.html" class="extype" name="bigglue.configurations.PlatformBuilder">PlatformBuilder</a>], <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a>, <a href="http://www.scala-lang.org/api/2.12.3/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a>, <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>], <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>], <a href="../checkers/UnaryChecker.html" class="extype" name="bigglue.checkers.UnaryChecker">UnaryChecker</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>], <a href="../checkers/OutputStoreChecker.html" class="extype" name="bigglue.checkers.OutputStoreChecker">OutputStoreChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>], <a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>], <a href="../checkers/ConfigChecker.html" class="extype" name="bigglue.checkers.ConfigChecker">ConfigChecker</a>, <a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a>, <a href="../configurations/ConfigBuildsPlatform.html" class="extype" name="bigglue.configurations.ConfigBuildsPlatform">ConfigBuildsPlatform</a>, <a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a>[<a href="../configurations/PlatformBuilder.html" class="extype" name="bigglue.configurations.PlatformBuilder">PlatformBuilder</a>], <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
         </div></div>
         
 
@@ -258,7 +254,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="bigglue.examples.CommitExtraction"><span>CommitExtraction</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="bigglue.computations.Mapper"><span>Mapper</span></li><li class="in" name="bigglue.computations.UnaryComputation"><span>UnaryComputation</span></li><li class="in" name="bigglue.checkers.UnaryChecker"><span>UnaryChecker</span></li><li class="in" name="bigglue.checkers.OutputStoreChecker"><span>OutputStoreChecker</span></li><li class="in" name="bigglue.checkers.InputStoreChecker"><span>InputStoreChecker</span></li><li class="in" name="bigglue.checkers.ConfigChecker"><span>ConfigChecker</span></li><li class="in" name="bigglue.computations.Computation"><span>Computation</span></li><li class="in" name="bigglue.configurations.ConfigBuildsPlatform"><span>ConfigBuildsPlatform</span></li><li class="in" name="bigglue.configurations.ConfigBuilds"><span>ConfigBuilds</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="bigglue.examples.Clone"><span>Clone</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="bigglue.computations.Mapper"><span>Mapper</span></li><li class="in" name="bigglue.computations.UnaryComputation"><span>UnaryComputation</span></li><li class="in" name="bigglue.checkers.UnaryChecker"><span>UnaryChecker</span></li><li class="in" name="bigglue.checkers.OutputStoreChecker"><span>OutputStoreChecker</span></li><li class="in" name="bigglue.checkers.InputStoreChecker"><span>InputStoreChecker</span></li><li class="in" name="bigglue.checkers.ConfigChecker"><span>ConfigChecker</span></li><li class="in" name="bigglue.computations.Computation"><span>Computation</span></li><li class="in" name="bigglue.configurations.ConfigBuildsPlatform"><span>ConfigBuildsPlatform</span></li><li class="in" name="bigglue.configurations.ConfigBuilds"><span>ConfigBuilds</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
                   <span class="filtertype">Implicitly<br />
@@ -283,10 +279,10 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="bigglue.examples.CommitExtraction#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;():bigglue.examples.CommitExtraction"></a><a id="&lt;init&gt;:CommitExtraction"></a>
+              <ol><li name="bigglue.examples.Clone#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(repoFolderLocation:String):bigglue.examples.Clone"></a><a id="&lt;init&gt;:Clone"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#&lt;init&gt;():bigglue.examples.CommitExtraction" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#&lt;init&gt;(repoFolderLocation:String):bigglue.examples.Clone" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -295,7 +291,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">CommitExtraction</span><span class="params">()</span>
+        <span class="name">Clone</span><span class="params">(<span name="repoFolderLocation">repoFolderLocation: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;mockfixrexample/repos&quot;</span></span>)</span>
       </span>
       
       
@@ -312,7 +308,7 @@
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -328,7 +324,7 @@
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html###():Int" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -344,7 +340,7 @@
     </li><li name="scala.Predef.any2stringadd#+" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="+(other:String):String"></a><a id="+(String):String"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#+(other:String):String" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#+(other:String):String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -357,14 +353,14 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method any2stringadd in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method any2stringadd in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>any2stringadd</dd></dl></div>
     </li><li name="bigglue.computations.Mapper#--&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="--&gt;[End&lt;:bigglue.data.Identifiable[End]](p:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.PartialMapperPipe[Input,Output,End]"></a><a id="--&gt;[End&lt;:Identifiable[End]](Pipe[GitCommitInfo,End]):PartialMapperPipe[GitRepo,GitCommitInfo,End]"></a>
+      <a id="--&gt;[End&lt;:bigglue.data.Identifiable[End]](p:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.PartialMapperPipe[Input,Output,End]"></a><a id="--&gt;[End&lt;:Identifiable[End]](Pipe[GitRepo,End]):PartialMapperPipe[GitID,GitRepo,End]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#--&gt;[End&lt;:bigglue.data.Identifiable[End]](p:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.PartialMapperPipe[Input,Output,End]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#--&gt;[End&lt;:bigglue.data.Identifiable[End]](p:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.PartialMapperPipe[Input,Output,End]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -373,7 +369,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="tparams">[<span name="End">End &lt;: <a href="../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>]</span><span class="params">(<span name="p">p: <a href="../pipes/Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>, <span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>)</span><span class="result">: <a href="../pipes/PartialMapperPipe.html" class="extype" name="bigglue.pipes.PartialMapperPipe">PartialMapperPipe</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>, <span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>
+        <span title="gt4s: $minus$minus$greater" class="name">--&gt;</span><span class="tparams">[<span name="End">End &lt;: <a href="../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>]</span><span class="params">(<span name="p">p: <a href="../pipes/Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>)</span><span class="result">: <a href="../pipes/PartialMapperPipe.html" class="extype" name="bigglue.pipes.PartialMapperPipe">PartialMapperPipe</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <span class="extype" name="bigglue.computations.Mapper.--&gt;.End">End</span>]</span>
       </span>
       
       <p class="shortcomment cmt">This is part of the series of function calls that make the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This is part of the series of function calls that make the pipeline. In the example, this is called when stating (Clone()--&gt;clonedMap) or (CommitExtraction()--&gt;commitInfoMap).
@@ -381,9 +377,9 @@ Simply put, this creates a part of the pipeline that connects the mapper to the 
 pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End</dt><dd class="cmt"><p>The type of data store that is at the end of the pipeline. In the example, this would be <a href="GitCommitGroups.html" class="extype" name="bigglue.examples.GitCommitGroups">bigglue.examples.GitCommitGroups</a></p></dd><dt class="param">p</dt><dd class="cmt"><p>The part of the pipe that follows the mapper computation. In the example, for Clone() it's clonedMap:--CommitExtraction()--&gt;commitInfoMap:-+FindAuthor()+-&gt;authorMap,
          and for BB it's commitInfoMap:-+FindAuthor()+-&gt;authorMap.</p></dd><dt>returns</dt><dd class="cmt"><p>A <span class="extype" name="PartialMapperPipe">PartialMapperPipe</span> which links the mapper together with the pipe that starts with the output data store.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
     </li><li name="scala.Predef.ArrowAssoc#-&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="-&gt;[B](y:B):(A,B)"></a><a id="-&gt;[B](B):(CommitExtraction,B)"></a>
+      <a id="-&gt;[B](y:B):(A,B)"></a><a id="-&gt;[B](B):(Clone,B)"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#-&gt;[B](y:B):(A,B)" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#-&gt;[B](y:B):(A,B)" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -392,12 +388,12 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>, <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
+        <span title="gt4s: $minus$greater" class="implicit">-&gt;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>, <span class="extype" name="scala.Predef.ArrowAssoc.-&gt;.B">B</span>)</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method ArrowAssoc in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method ArrowAssoc in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
@@ -406,7 +402,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -422,7 +418,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -436,9 +432,9 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="bigglue.checkers.UnaryChecker#check" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="check(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="check(PipeConfig,DataStore[GitRepo],DataStore[GitCommitInfo]):Unit"></a>
+      <a id="check(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="check(PipeConfig,DataStore[GitID],DataStore[GitRepo]):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#check(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#check(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -447,7 +443,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">check</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">check</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Check routine for unary data processors
@@ -456,7 +452,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="bigglue.checkers.ConfigChecker#checkConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="checkConfig(conf:bigglue.configurations.PipeConfig):Unit"></a><a id="checkConfig(PipeConfig):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#checkConfig(conf:bigglue.configurations.PipeConfig):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#checkConfig(conf:bigglue.configurations.PipeConfig):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -471,9 +467,9 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
       <p class="shortcomment cmt">Check that paths in configuration file relevant to host class are well-formed.</p><div class="fullcomment"><div class="comment cmt"><p>Check that paths in configuration file relevant to host class are well-formed. Default does nothing.
 </p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>the config file to check</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../checkers/ConfigChecker.html" class="extype" name="bigglue.checkers.ConfigChecker">ConfigChecker</a></dd></dl></div>
     </li><li name="bigglue.checkers.InputStoreChecker#checkInput" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="checkInput(inputMap:bigglue.store.DataStore[Input]):Unit"></a><a id="checkInput(DataStore[GitRepo]):Unit"></a>
+      <a id="checkInput(inputMap:bigglue.store.DataStore[Input]):Unit"></a><a id="checkInput(DataStore[GitID]):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#checkInput(inputMap:bigglue.store.DataStore[Input]):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#checkInput(inputMap:bigglue.store.DataStore[Input]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -482,15 +478,15 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">checkInput</span><span class="params">(<span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">checkInput</span><span class="params">(<span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Check that input store is compatible with the host class.</p><div class="fullcomment"><div class="comment cmt"><p>Check that input store is compatible with the host class. Default does nothing.
 </p></div><dl class="paramcmts block"><dt class="param">inputMap</dt><dd class="cmt"><p>the input store to check</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a></dd></dl></div>
     </li><li name="bigglue.checkers.OutputStoreChecker#checkOutput" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="checkOutput(outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="checkOutput(DataStore[GitCommitInfo]):Unit"></a>
+      <a id="checkOutput(outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="checkOutput(DataStore[GitRepo]):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#checkOutput(outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#checkOutput(outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -499,7 +495,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">checkOutput</span><span class="params">(<span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">checkOutput</span><span class="params">(<span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Check that output store is compatible with the host class.</p><div class="fullcomment"><div class="comment cmt"><p>Check that output store is compatible with the host class. Default does nothing.
@@ -507,7 +503,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#clone():Object" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -529,7 +525,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="bigglue.configurations.ConfigBuilds#configOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="configOpt:Option[bigglue.configurations.PipeConfig]"></a><a id="configOpt:Option[PipeConfig]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#configOpt:Option[bigglue.configurations.PipeConfig]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#configOpt:Option[bigglue.configurations.PipeConfig]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -545,7 +541,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="bigglue.computations.Computation#configOption" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="configOption:bigglue.configurations.ConfOpt"></a><a id="configOption:ConfOpt"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#configOption:bigglue.configurations.ConfOpt" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#configOption:bigglue.configurations.ConfOpt" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -561,7 +557,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="bigglue.configurations.ConfigBuildsPlatform#constructBuilder" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="constructBuilder(config:bigglue.configurations.PipeConfig):bigglue.configurations.PlatformBuilder"></a><a id="constructBuilder(PipeConfig):PlatformBuilder"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#constructBuilder(config:bigglue.configurations.PipeConfig):bigglue.configurations.PlatformBuilder" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#constructBuilder(config:bigglue.configurations.PipeConfig):bigglue.configurations.PlatformBuilder" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -575,9 +571,9 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../configurations/ConfigBuildsPlatform.html" class="extype" name="bigglue.configurations.ConfigBuildsPlatform">ConfigBuildsPlatform</a> → <a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a></dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a><a id="ensuring((CommitExtraction)⇒Boolean,⇒Any):CommitExtraction"></a>
+      <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a><a id="ensuring((Clone)⇒Boolean,⇒Any):Clone"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -586,18 +582,18 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.Clone">Clone</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ensuring(cond:A=&gt;Boolean):A"></a><a id="ensuring((CommitExtraction)⇒Boolean):CommitExtraction"></a>
+      <a id="ensuring(cond:A=&gt;Boolean):A"></a><a id="ensuring((Clone)⇒Boolean):Clone"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:A=&gt;Boolean):A" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#ensuring(cond:A=&gt;Boolean):A" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -606,18 +602,18 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: (<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.Clone">Clone</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ensuring(cond:Boolean,msg:=&gt;Any):A"></a><a id="ensuring(Boolean,⇒Any):CommitExtraction"></a>
+      <a id="ensuring(cond:Boolean,msg:=&gt;Any):A"></a><a id="ensuring(Boolean,⇒Any):Clone"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:Boolean,msg:=&gt;Any):A" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#ensuring(cond:Boolean,msg:=&gt;Any):A" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -626,18 +622,18 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>, <span name="msg">msg: ⇒ <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.Clone">Clone</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ensuring(cond:Boolean):A"></a><a id="ensuring(Boolean):CommitExtraction"></a>
+      <a id="ensuring(cond:Boolean):A"></a><a id="ensuring(Boolean):Clone"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#ensuring(cond:Boolean):A" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#ensuring(cond:Boolean):A" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -646,18 +642,18 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a></span>
+        <span class="implicit">ensuring</span><span class="params">(<span name="cond">cond: <a href="http://www.scala-lang.org/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.examples.Clone">Clone</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method Ensuring in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method Ensuring in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>Ensuring</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -673,7 +669,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#finalize():Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -695,7 +691,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="scala.Predef.StringFormat#formatted" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="formatted(fmtstr:String):String"></a><a id="formatted(String):String"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#formatted(fmtstr:String):String" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#formatted(fmtstr:String):String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -708,8 +704,8 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method StringFormat in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method StringFormat in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>StringFormat</dd><dt>Annotations</dt><dd>
                 <span class="name">@inline</span><span class="args">()</span>
@@ -718,7 +714,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#getClass():Class[_]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -734,7 +730,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
     </li><li name="bigglue.configurations.ConfigBuilds#getConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getConfig(config:bigglue.configurations.PipeConfig):bigglue.configurations.PipeConfig"></a><a id="getConfig(PipeConfig):PipeConfig"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#getConfig(config:bigglue.configurations.PipeConfig):bigglue.configurations.PipeConfig" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#getConfig(config:bigglue.configurations.PipeConfig):bigglue.configurations.PipeConfig" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -748,9 +744,9 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../configurations/ConfigBuilds.html" class="extype" name="bigglue.configurations.ConfigBuilds">ConfigBuilds</a></dd></dl></div>
     </li><li name="bigglue.computations.Mapper#getOp" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getOp:Input=&gt;List[Output]"></a><a id="getOp:(GitRepo)⇒List[GitCommitInfo]"></a>
+      <a id="getOp:Input=&gt;List[Output]"></a><a id="getOp:(GitID)⇒List[GitRepo]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#getOp:Input=&gt;List[Output]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#getOp:Input=&gt;List[Output]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -759,14 +755,14 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getOp</span><span class="result">: (<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>) ⇒ <span class="extype" name="scala.List">List</span>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+        <span class="name">getOp</span><span class="result">: (<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>) ⇒ <span class="extype" name="scala.List">List</span>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
     </li><li name="bigglue.computations.UnaryComputation#getUnaryPlatform" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getUnaryPlatform():bigglue.platforms.UnaryPlatform[Input,Output]"></a><a id="getUnaryPlatform():UnaryPlatform[GitRepo,GitCommitInfo]"></a>
+      <a id="getUnaryPlatform():bigglue.platforms.UnaryPlatform[Input,Output]"></a><a id="getUnaryPlatform():UnaryPlatform[GitID,GitRepo]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#getUnaryPlatform():bigglue.platforms.UnaryPlatform[Input,Output]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#getUnaryPlatform():bigglue.platforms.UnaryPlatform[Input,Output]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -775,14 +771,14 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getUnaryPlatform</span><span class="params">()</span><span class="result">: <a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+        <span class="name">getUnaryPlatform</span><span class="params">()</span><span class="result">: <a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
     </li><li name="bigglue.computations.Mapper#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="init(PipeConfig,DataStore[GitRepo],DataStore[GitCommitInfo]):Unit"></a>
+      <a id="init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit"></a><a id="init(PipeConfig,DataStore[GitID],DataStore[GitRepo]):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -791,7 +787,7 @@ pipeline after that.</p></div><dl class="paramcmts block"><dt class="tparam">End
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">init</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">init</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">This initializes the mapper computation.</p><div class="fullcomment"><div class="comment cmt"><p>This initializes the mapper computation.
@@ -805,9 +801,9 @@ and then initializes the platform with <span class="extype" name="UnaryPlatform.
                  Within the example, for gitID:--Clone()--&gt;clonedMap, this would be clonedMap. Likewise, for clonedMap:--CommitExtraction()--&gt;commitInfoMap, this would be commitInfoMap.
                  Both of these Data Stores are <a href="../store/instances/solr/SolrDataMap.html" class="extype" name="bigglue.store.instances.solr.SolrDataMap">bigglue.store.instances.solr.SolrDataMap</a> within the example.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
     </li><li name="bigglue.computations.UnaryComputation#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output],platform:bigglue.platforms.UnaryPlatform[Input,Output]):Unit"></a><a id="init(PipeConfig,DataStore[GitRepo],DataStore[GitCommitInfo],UnaryPlatform[GitRepo,GitCommitInfo]):Unit"></a>
+      <a id="init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output],platform:bigglue.platforms.UnaryPlatform[Input,Output]):Unit"></a><a id="init(PipeConfig,DataStore[GitID],DataStore[GitRepo],UnaryPlatform[GitID,GitRepo]):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output],platform:bigglue.platforms.UnaryPlatform[Input,Output]):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#init(conf:bigglue.configurations.PipeConfig,inputMap:bigglue.store.DataStore[Input],outputMap:bigglue.store.DataStore[Output],platform:bigglue.platforms.UnaryPlatform[Input,Output]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -816,7 +812,7 @@ and then initializes the platform with <span class="extype" name="UnaryPlatform.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">init</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>, <span name="platform">platform: <a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">init</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="inputMap">inputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>]</span>, <span name="outputMap">outputMap: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>, <span name="platform">platform: <a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">This connects the newly initialized platform to the Input Data Store by making it so the Input Data Store
@@ -825,7 +821,7 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
     </li><li name="bigglue.computations.Computation#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="init(config:bigglue.configurations.PipeConfig,platform:bigglue.platforms.Platform):Unit"></a><a id="init(PipeConfig,Platform):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#init(config:bigglue.configurations.PipeConfig,platform:bigglue.platforms.Platform):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#init(config:bigglue.configurations.PipeConfig,platform:bigglue.platforms.Platform):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -841,7 +837,7 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -855,9 +851,9 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="bigglue.computations.UnaryComputation#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="name(newName:String):bigglue.computations.UnaryComputation[Input,Output]"></a><a id="name(String):UnaryComputation[GitRepo,GitCommitInfo]"></a>
+      <a id="name(newName:String):bigglue.computations.UnaryComputation[Input,Output]"></a><a id="name(String):UnaryComputation[GitID,GitRepo]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#name(newName:String):bigglue.computations.UnaryComputation[Input,Output]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#name(newName:String):bigglue.computations.UnaryComputation[Input,Output]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -866,14 +862,14 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">name</span><span class="params">(<span name="newName">newName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+        <span class="name">name</span><span class="params">(<span name="newName">newName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
     </li><li name="bigglue.computations.UnaryComputation#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="name:String"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#name:String" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#name:String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -889,7 +885,7 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -905,7 +901,7 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#notify():Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -921,7 +917,7 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#notifyAll():Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -937,7 +933,7 @@ sends data down to the platform.</p></div><dl class="paramcmts block"><dt class=
     </li><li name="bigglue.computations.Computation#persist" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="persist():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#persist():Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#persist():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -955,7 +951,7 @@ This gives the platform the responsibility of what data to send/resend down the 
     </li><li name="bigglue.computations.Computation#platformOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="platformOpt:Option[bigglue.platforms.Platform]"></a><a id="platformOpt:Option[Platform]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#platformOpt:Option[bigglue.platforms.Platform]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#platformOpt:Option[bigglue.platforms.Platform]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -968,10 +964,26 @@ This gives the platform the responsibility of what data to send/resend down the 
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
+    </li><li name="bigglue.examples.Clone#repoFolderLocation" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="repoFolderLocation:String"></a>
+      <span class="permalink">
+      <a href="../../bigglue/examples/Clone.html#repoFolderLocation:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">repoFolderLocation</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
     </li><li name="bigglue.computations.Mapper#run" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="run():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#run():Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#run():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -987,7 +999,7 @@ This gives the platform the responsibility of what data to send/resend down the 
     </li><li name="bigglue.configurations.ConfigBuilds#setConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setConfig(pipeConfig:bigglue.configurations.PipeConfig):Unit"></a><a id="setConfig(PipeConfig):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#setConfig(pipeConfig:bigglue.configurations.PipeConfig):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#setConfig(pipeConfig:bigglue.configurations.PipeConfig):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1003,7 +1015,7 @@ This gives the platform the responsibility of what data to send/resend down the 
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1019,7 +1031,7 @@ This gives the platform the responsibility of what data to send/resend down the 
     </li><li name="bigglue.computations.Computation#terminate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="terminate():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#terminate():Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#terminate():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1035,7 +1047,7 @@ This gives the platform the responsibility of what data to send/resend down the 
     </li><li name="bigglue.computations.Computation#toStep" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toStep(conf:bigglue.configurations.PipeConfig,step:String):bigglue.configurations.PipeConfig"></a><a id="toStep(PipeConfig,String):PipeConfig"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#toStep(conf:bigglue.configurations.PipeConfig,step:String):bigglue.configurations.PipeConfig" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#toStep(conf:bigglue.configurations.PipeConfig,step:String):bigglue.configurations.PipeConfig" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1049,9 +1061,9 @@ This gives the platform the responsibility of what data to send/resend down the 
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Computation.html" class="extype" name="bigglue.computations.Computation">Computation</a></dd></dl></div>
     </li><li name="bigglue.computations.Mapper#tryCompute" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="tryCompute(input:Input):Option[List[Output]]"></a><a id="tryCompute(GitRepo):Option[List[GitCommitInfo]]"></a>
+      <a id="tryCompute(input:Input):Option[List[Output]]"></a><a id="tryCompute(GitID):Option[List[GitRepo]]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#tryCompute(input:Input):Option[List[Output]]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#tryCompute(input:Input):Option[List[Output]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1060,7 +1072,7 @@ This gives the platform the responsibility of what data to send/resend down the 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryCompute</span><span class="params">(<span name="input">input: <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.List">List</span>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]]</span>
+        <span class="name">tryCompute</span><span class="params">(<span name="input">input: <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.List">List</span>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]]</span>
       </span>
       
       <p class="shortcomment cmt">Given an input, this attempts to compute the list of outputs, stamp it with the version of the computation,
@@ -1069,9 +1081,9 @@ give it provenance information, and then put it in the output map to be sent fur
 Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Identity[Output]):bigglue.data.Identity[Output]" class="extmbr" name="bigglue.curators.VersionCurator#stampVersion">bigglue.curators.VersionCurator.stampVersion</a>, <a href="../curators/ProvenanceCurator.html#reportProvenance(src:Input,target:Output):Unit" class="extmbr" name="bigglue.curators.ProvenanceCurator#reportProvenance">bigglue.curators.ProvenanceCurator.reportProvenance</a>, and <span class="extype" name="DataStore.put">DataStore.put</span>.</p></div><dl class="paramcmts block"><dt class="param">input</dt><dd class="cmt"><p>The input that needs to be computed.</p></dd><dt>returns</dt><dd class="cmt"><p>If the computation succeeded, the list of outputs that were produced by the input.
         If the computation didn't succeed, it report the error and returns None.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
     </li><li name="bigglue.computations.UnaryComputation#unaryPlatformOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="unaryPlatformOpt:Option[bigglue.platforms.UnaryPlatform[Input,Output]]"></a><a id="unaryPlatformOpt:Option[UnaryPlatform[GitRepo,GitCommitInfo]]"></a>
+      <a id="unaryPlatformOpt:Option[bigglue.platforms.UnaryPlatform[Input,Output]]"></a><a id="unaryPlatformOpt:Option[UnaryPlatform[GitID,GitRepo]]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#unaryPlatformOpt:Option[bigglue.platforms.UnaryPlatform[Input,Output]]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#unaryPlatformOpt:Option[bigglue.platforms.UnaryPlatform[Input,Output]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1080,14 +1092,14 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">unaryPlatformOpt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]]</span>
+        <span class="name">unaryPlatformOpt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../platforms/UnaryPlatform.html" class="extype" name="bigglue.platforms.UnaryPlatform">UnaryPlatform</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a></dd></dl></div>
     </li><li name="bigglue.computations.Computation#versionOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="versionOpt:Option[String]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#versionOpt:Option[String]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#versionOpt:Option[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1103,7 +1115,7 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#wait():Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1125,7 +1137,7 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1147,7 +1159,7 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1167,9 +1179,9 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
               
         </dd></dl></div>
     </li><li name="bigglue.computations.Mapper#withConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="withConfig(newConfigOption:bigglue.configurations.ConfOpt):bigglue.computations.Mapper[Input,Output]"></a><a id="withConfig(ConfOpt):Mapper[GitRepo,GitCommitInfo]"></a>
+      <a id="withConfig(newConfigOption:bigglue.configurations.ConfOpt):bigglue.computations.Mapper[Input,Output]"></a><a id="withConfig(ConfOpt):Mapper[GitID,GitRepo]"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#withConfig(newConfigOption:bigglue.configurations.ConfOpt):bigglue.computations.Mapper[Input,Output]" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#withConfig(newConfigOption:bigglue.configurations.ConfOpt):bigglue.computations.Mapper[Input,Output]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1178,14 +1190,14 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withConfig</span><span class="params">(<span name="newConfigOption">newConfigOption: <a href="../configurations/ConfOpt.html" class="extype" name="bigglue.configurations.ConfOpt">ConfOpt</a></span>)</span><span class="result">: <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</span>
+        <span class="name">withConfig</span><span class="params">(<span name="newConfigOption">newConfigOption: <a href="../configurations/ConfOpt.html" class="extype" name="bigglue.configurations.ConfOpt">ConfOpt</a></span>)</span><span class="result">: <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a></dd></dl></div>
     </li><li name="scala.Predef.ArrowAssoc#→" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="→[B](y:B):(A,B)"></a><a id="→[B](B):(CommitExtraction,B)"></a>
+      <a id="→[B](y:B):(A,B)"></a><a id="→[B](B):(Clone,B)"></a>
       <span class="permalink">
-      <a href="../../bigglue/examples/CommitExtraction.html#→[B](y:B):(A,B)" title="Permalink">
+      <a href="../../bigglue/examples/Clone.html#→[B](y:B):(A,B)" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1194,12 +1206,12 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>, <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
+        <span title="gt4s: $u2192" class="implicit">→</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span></span>)</span><span class="result">: (<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>, <span class="extype" name="scala.Predef.ArrowAssoc.→.B">B</span>)</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt class="implicit">Implicit</dt><dd>
-            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to
-            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>] performed by method ArrowAssoc in scala.Predef.
+            This member is added by an implicit conversion from <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to
+            <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>] performed by method ArrowAssoc in scala.Predef.
             
           </dd><dt>Definition Classes</dt><dd>ArrowAssoc</dd></dl></div>
     </li>
@@ -1221,15 +1233,15 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.3/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a></h3>
             </div><div class="parent" name="bigglue.computations.Mapper">
-              <h3>Inherited from <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+              <h3>Inherited from <a href="../computations/Mapper.html" class="extype" name="bigglue.computations.Mapper">Mapper</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</h3>
             </div><div class="parent" name="bigglue.computations.UnaryComputation">
-              <h3>Inherited from <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+              <h3>Inherited from <a href="../computations/UnaryComputation.html" class="extype" name="bigglue.computations.UnaryComputation">UnaryComputation</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</h3>
             </div><div class="parent" name="bigglue.checkers.UnaryChecker">
-              <h3>Inherited from <a href="../checkers/UnaryChecker.html" class="extype" name="bigglue.checkers.UnaryChecker">UnaryChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+              <h3>Inherited from <a href="../checkers/UnaryChecker.html" class="extype" name="bigglue.checkers.UnaryChecker">UnaryChecker</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</h3>
             </div><div class="parent" name="bigglue.checkers.OutputStoreChecker">
-              <h3>Inherited from <a href="../checkers/OutputStoreChecker.html" class="extype" name="bigglue.checkers.OutputStoreChecker">OutputStoreChecker</a>[<a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>]</h3>
+              <h3>Inherited from <a href="../checkers/OutputStoreChecker.html" class="extype" name="bigglue.checkers.OutputStoreChecker">OutputStoreChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</h3>
             </div><div class="parent" name="bigglue.checkers.InputStoreChecker">
-              <h3>Inherited from <a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a>[<a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>]</h3>
+              <h3>Inherited from <a href="../checkers/InputStoreChecker.html" class="extype" name="bigglue.checkers.InputStoreChecker">InputStoreChecker</a>[<a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>]</h3>
             </div><div class="parent" name="bigglue.checkers.ConfigChecker">
               <h3>Inherited from <a href="../checkers/ConfigChecker.html" class="extype" name="bigglue.checkers.ConfigChecker">ConfigChecker</a></h3>
             </div><div class="parent" name="bigglue.computations.Computation">
@@ -1245,19 +1257,19 @@ Calls <a href="../curators/VersionCurator.html#stampVersion(id:bigglue.data.Iden
             </div>
         <div class="conversion" name="scala.Predef.any2stringadd">
               <h3>Inherited by implicit conversion any2stringadd from
-                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+                <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to <span class="extype" name="scala.Predef.any2stringadd">any2stringadd</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>]
               </h3>
             </div><div class="conversion" name="scala.Predef.StringFormat">
               <h3>Inherited by implicit conversion StringFormat from
-                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+                <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to <span class="extype" name="scala.Predef.StringFormat">StringFormat</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>]
               </h3>
             </div><div class="conversion" name="scala.Predef.Ensuring">
               <h3>Inherited by implicit conversion Ensuring from
-                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+                <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to <span class="extype" name="scala.Predef.Ensuring">Ensuring</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>]
               </h3>
             </div><div class="conversion" name="scala.Predef.ArrowAssoc">
               <h3>Inherited by implicit conversion ArrowAssoc from
-                <a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a> to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>]
+                <a href="" class="extype" name="bigglue.examples.Clone">Clone</a> to <span class="extype" name="scala.Predef.ArrowAssoc">ArrowAssoc</span>[<a href="" class="extype" name="bigglue.examples.Clone">Clone</a>]
               </h3>
             </div>
         </div>
