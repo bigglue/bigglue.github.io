@@ -299,8 +299,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="VersionedIdentity.html" title="An Identifiable with a version."></a>
-                        <a href="VersionedIdentity.html" title="An Identifiable with a version.">
+                        <a class="class" href="VersionedIdentity.html" title="An Identity with a version."></a>
+                        <a href="VersionedIdentity.html" title="An Identity with a version.">
                           VersionedIdentity
                         </a>
                       </li><li class="current-entities indented2">
@@ -557,7 +557,7 @@ With this class, the <a href="Identity.html" class="extype" name="bigglue.data.I
       
       <p class="shortcomment cmt">An Identifiable is a simple data type in BigGlue.</p><div class="fullcomment"><div class="comment cmt"><p>An Identifiable is a simple data type in BigGlue.
 Within this type, you have an <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a>, which is similar to the name of the data type.
-</p></div></div>
+</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>The type of the Identifiable. Within the example, this would be <a href="../examples/GitID.html" class="extype" name="bigglue.examples.GitID">bigglue.examples.GitID</a>, <a href="../examples/GitRepo.html" class="extype" name="bigglue.examples.GitRepo">bigglue.examples.GitRepo</a>, <a href="../examples/GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">bigglue.examples.GitCommitInfo</a>, or <a href="../examples/GitCommitGroups.html" class="extype" name="bigglue.examples.GitCommitGroups">bigglue.examples.GitCommitGroups</a>.</p></dd></dl></div>
     </li><li name="bigglue.data.Identity" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Identity[A]extendsAnyRef"></a><a id="Identity[A]:Identity[A]"></a>
       <span class="permalink">
@@ -682,13 +682,13 @@ These usually consist of two things:
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="An Identifiable with a version." href="VersionedIdentity.html">
+        <a title="An Identity with a version." href="VersionedIdentity.html">
               <span class="name">VersionedIdentity</span>
             </a><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="version">version: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a>[<span class="extype" name="bigglue.data.VersionedIdentity.A">A</span>] with <a href="http://www.scala-lang.org/api/2.12.3/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      <p class="shortcomment cmt">An <a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a> with a version.</p><div class="fullcomment"><div class="comment cmt"><p>An <a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a> with a version. Note that when serializing this, you will end up with an id of <a href="VersionedIdentity.html#id:String" class="extmbr" name="bigglue.data.VersionedIdentity#id">id</a>-#-<a href="VersionedIdentity.html#version:String" class="extmbr" name="bigglue.data.VersionedIdentity#version">version</a></p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>The type of the Identifiable that this came from. In the example, this would be Identity[GitID],
-          Identity[GitRepo], Identity[GitCommitInfo], and Identity[GitCommitGroups] for their respective data maps.</p></dd><dt class="param">version</dt><dd class="cmt"><p>The string that shows that shows which version of a step in a pipeline the Identifiable originated from. (NOT OPTIONAL)</p></dd></dl></div>
+      <p class="shortcomment cmt">An <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a> with a version.</p><div class="fullcomment"><div class="comment cmt"><p>An <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a> with a version. Note that when serializing this, you will end up with an id of <a href="VersionedIdentity.html#id:String" class="extmbr" name="bigglue.data.VersionedIdentity#id">id</a>-#-<a href="VersionedIdentity.html#version:String" class="extmbr" name="bigglue.data.VersionedIdentity#version">version</a></p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>The type of the Identifiable that this came from. In the example, this would be Identity[GitID],
+          Identity[GitRepo], Identity[GitCommitInfo], and Identity[GitCommitGroups] for their respective data maps.</p></dd><dt class="param">id</dt><dd class="cmt"><p>A simple string that acts as an Identifier</p></dd><dt class="param">version</dt><dd class="cmt"><p>The string that shows that shows which version of a step in a pipeline the Identifiable originated from. (NOT OPTIONAL)</p></dd></dl></div>
     </li></ol>
             </div>
 

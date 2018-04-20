@@ -211,8 +211,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="VersionedIdentity.html" title="An Identifiable with a version."></a>
-                        <a href="VersionedIdentity.html" title="An Identifiable with a version.">
+                        <a class="class" href="VersionedIdentity.html" title="An Identity with a version."></a>
+                        <a href="VersionedIdentity.html" title="An Identity with a version.">
                           VersionedIdentity
                         </a>
                       </li><li class="current-entities indented2">
@@ -441,22 +441,6 @@ With this class, the <a href="Identity.html" class="extype" name="bigglue.data.I
       </span>
       
       
-    </li><li name="bigglue.data.Identifiable#addEmbedded" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="addEmbedded(key:String,value:String):Unit"></a><a id="addEmbedded(String,String):Unit"></a>
-      <span class="permalink">
-      <a href="../../bigglue/data/I.html#addEmbedded(key:String,value:String):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addEmbedded</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -495,22 +479,6 @@ With this class, the <a href="Identity.html" class="extype" name="bigglue.data.I
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="bigglue.data.Identifiable#embedded" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="embedded:Map[String,String]"></a>
-      <span class="permalink">
-      <a href="../../bigglue/data/I.html#embedded:Map[String,String]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">var</span>
-      </span>
-      <span class="symbol">
-        <span class="name">embedded</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a><a id="ensuring((I[A])⇒Boolean,⇒Any):I[A]"></a>
       <span class="permalink">
@@ -668,22 +636,6 @@ With this class, the <a href="Identity.html" class="extype" name="bigglue.data.I
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="bigglue.data.Identifiable#getEmbedded" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getEmbedded(key:String):Option[String]"></a><a id="getEmbedded(String):Option[String]"></a>
-      <span class="permalink">
-      <a href="../../bigglue/data/I.html#getEmbedded(key:String):Option[String]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getEmbedded</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="bigglue.data.Identifiable#getId" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getId():String"></a>
       <span class="permalink">
@@ -699,7 +651,23 @@ With this class, the <a href="Identity.html" class="extype" name="bigglue.data.I
         <span class="name">getId</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
+      <p class="shortcomment cmt">Gets the Id from the identity.</p><div class="fullcomment"><div class="comment cmt"><p>Gets the Id from the identity.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The Identifiable's name.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
+    </li><li name="bigglue.data.Identifiable#getProvenance" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getProvenance():Option[bigglue.curators.Provenance]"></a><a id="getProvenance():Option[Provenance]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/data/I.html#getProvenance():Option[bigglue.curators.Provenance]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getProvenance</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../curators/Provenance.html" class="extype" name="bigglue.curators.Provenance">Provenance</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Get the Provenance information. If there is no provenance, we return nothing.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="bigglue.data.Identifiable#getVersion" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getVersion():Option[String]"></a>
       <span class="permalink">
@@ -715,7 +683,7 @@ With this class, the <a href="Identity.html" class="extype" name="bigglue.data.I
         <span class="name">getVersion</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
+      <p class="shortcomment cmt">Gets the Version from the identity</p><div class="fullcomment"><div class="comment cmt"><p>Gets the Version from the identity</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The Identifiable's version.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="bigglue.data.I#i" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="i():A"></a>
       <span class="permalink">
@@ -747,7 +715,7 @@ With this class, the <a href="Identity.html" class="extype" name="bigglue.data.I
         <span class="name">identity</span><span class="params">()</span><span class="result">: <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a>[<a href="" class="extype" name="bigglue.data.I">I</a>[<span class="extype" name="bigglue.data.I.A">A</span>]]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
+      <p class="shortcomment cmt">Gets the <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a>/name of the object.</p><div class="fullcomment"><div class="comment cmt"><p>Gets the <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a>/name of the object.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a> of the object/</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="bigglue.data.Identifiable#identityOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="identityOpt:Option[bigglue.data.Identity[A]]"></a><a id="identityOpt:Option[Identity[I[A]]]"></a>
       <span class="permalink">
@@ -846,6 +814,38 @@ that consists of the word sum.</p></div><dl class="paramcmts block"><dt>returns<
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="bigglue.data.Identifiable#provenanceOpt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="provenanceOpt:Option[bigglue.curators.Provenance]"></a><a id="provenanceOpt:Option[Provenance]"></a>
+      <span class="permalink">
+      <a href="../../bigglue/data/I.html#provenanceOpt:Option[bigglue.curators.Provenance]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">provenanceOpt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../curators/Provenance.html" class="extype" name="bigglue.curators.Provenance">Provenance</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
+    </li><li name="bigglue.data.Identifiable#setProvenance" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setProvenance(prov:bigglue.curators.Provenance):Unit"></a><a id="setProvenance(Provenance):Unit"></a>
+      <span class="permalink">
+      <a href="../../bigglue/data/I.html#setProvenance(prov:bigglue.curators.Provenance):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setProvenance</span><span class="params">(<span name="prov">prov: <a href="../curators/Provenance.html" class="extype" name="bigglue.curators.Provenance">Provenance</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Creates a new Provenance information.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a new Provenance information.</p></div><dl class="paramcmts block"><dt class="param">prov</dt><dd class="cmt"><p>The provenance that we are adding to the Identifiable.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="bigglue.data.Identifiable#setVersion" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setVersion(version:String):Unit"></a><a id="setVersion(String):Unit"></a>
       <span class="permalink">
@@ -861,7 +861,7 @@ that consists of the word sum.</p></div><dl class="paramcmts block"><dt>returns<
         <span class="name">setVersion</span><span class="params">(<span name="version">version: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
+      <p class="shortcomment cmt">Creates a new Identity from the version and then sets that identity as it's identity.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a new Identity from the version and then sets that identity as it's identity.</p></div><dl class="paramcmts block"><dt class="param">version</dt><dd class="cmt"><p>The version that we are appending.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

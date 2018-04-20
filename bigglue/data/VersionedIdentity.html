@@ -211,8 +211,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="" title="An Identifiable with a version."></a>
-                        <a href="" title="An Identifiable with a version.">
+                        <a class="class" href="" title="An Identity with a version."></a>
+                        <a href="" title="An Identity with a version.">
                           VersionedIdentity
                         </a>
                       </li><li class="current-entities indented2">
@@ -249,8 +249,8 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An <a href="Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a> with a version. Note that when serializing this, you will end up with an id of <a href="#id:String" class="extmbr" name="bigglue.data.VersionedIdentity#id">id</a>-#-<a href="#version:String" class="extmbr" name="bigglue.data.VersionedIdentity#version">version</a></p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>The type of the Identifiable that this came from. In the example, this would be Identity[GitID],
-          Identity[GitRepo], Identity[GitCommitInfo], and Identity[GitCommitGroups] for their respective data maps.</p></dd><dt class="param">version</dt><dd class="cmt"><p>The string that shows that shows which version of a step in a pipeline the Identifiable originated from. (NOT OPTIONAL)</p></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>An <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a> with a version. Note that when serializing this, you will end up with an id of <a href="#id:String" class="extmbr" name="bigglue.data.VersionedIdentity#id">id</a>-#-<a href="#version:String" class="extmbr" name="bigglue.data.VersionedIdentity#version">version</a></p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>The type of the Identifiable that this came from. In the example, this would be Identity[GitID],
+          Identity[GitRepo], Identity[GitCommitInfo], and Identity[GitCommitGroups] for their respective data maps.</p></dd><dt class="param">id</dt><dd class="cmt"><p>A simple string that acts as an Identifier</p></dd><dt class="param">version</dt><dd class="cmt"><p>The string that shows that shows which version of a step in a pipeline the Identifiable originated from. (NOT OPTIONAL)</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -320,7 +320,7 @@
         <span class="name">VersionedIdentity</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="version">version: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">version</dt><dd class="cmt"><p>The string that shows that shows which version of a step in a pipeline the Identifiable originated from. (NOT OPTIONAL)</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>A simple string that acts as an Identifier</p></dd><dt class="param">version</dt><dd class="cmt"><p>The string that shows that shows which version of a step in a pipeline the Identifiable originated from. (NOT OPTIONAL)</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -475,7 +475,7 @@
         <span class="name">dropVersion</span><span class="params">()</span><span class="result">: <a href="BasicIdentity.html" class="extype" name="bigglue.data.BasicIdentity">BasicIdentity</a>[<span class="extype" name="bigglue.data.VersionedIdentity.A">A</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
+      <p class="shortcomment cmt">Creates a Basic Identity</p><div class="fullcomment"><div class="comment cmt"><p>Creates a Basic Identity</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>A <a href="BasicIdentity.html" class="extype" name="bigglue.data.BasicIdentity">BasicIdentity</a></p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a><a id="ensuring((VersionedIdentity[A])⇒Boolean,⇒Any):VersionedIdentity[A]"></a>
       <span class="permalink">
@@ -664,7 +664,7 @@
         <span class="name">getVersion</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>An optional string that shows which version of a step the Identifiable originated from.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>An optional string that shows which version of a step the Identifiable originated from. (Some(<a href="#version:String" class="extmbr" name="bigglue.data.VersionedIdentity#version">version</a>))</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
     </li><li name="bigglue.data.VersionedIdentity#id" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="id:String"></a>
       <span class="permalink">
@@ -760,7 +760,7 @@
         <span class="name">serialize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The serialized version of the Identity (<a href="#id:String" class="extmbr" name="bigglue.data.VersionedIdentity#id">id</a>-#-<a href="#version:String" class="extmbr" name="bigglue.data.VersionedIdentity#version">version</a>.)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -906,7 +906,7 @@
         <span class="name">withVersion</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a>[<span class="extype" name="bigglue.data.VersionedIdentity.A">A</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
+      <p class="shortcomment cmt">Creates a versioned Identity</p><div class="fullcomment"><div class="comment cmt"><p>Creates a versioned Identity</p></div><dl class="paramcmts block"><dt class="param">v</dt><dd class="cmt"><p>The version that we want to add.</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> with version v.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.data.VersionedIdentity">VersionedIdentity</a> → <a href="Identity.html" class="extype" name="bigglue.data.Identity">Identity</a></dd></dl></div>
     </li><li name="scala.Predef.ArrowAssoc#→" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="→[B](y:B):(A,B)"></a><a id="→[B](B):(VersionedIdentity[A],B)"></a>
       <span class="permalink">

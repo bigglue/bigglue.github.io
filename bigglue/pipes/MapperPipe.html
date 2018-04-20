@@ -828,10 +828,10 @@ This also moves the init call along the pipeline, sending it to the parts of the
       </span>
       
       
-    </li><li name="bigglue.pipes.MapperPipe#run" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="run():Unit"></a>
+    </li><li name="bigglue.pipes.MapperPipe#persist" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="persist():Unit"></a>
       <span class="permalink">
-      <a href="../../bigglue/pipes/MapperPipe.html#run():Unit" title="Permalink">
+      <a href="../../bigglue/pipes/MapperPipe.html#persist():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -840,12 +840,12 @@ This also moves the init call along the pipeline, sending it to the parts of the
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">run</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">persist</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <p class="shortcomment cmt">This is called within the example pipe.run.</p><div class="fullcomment"><div class="comment cmt"><p>This is called within the example pipe.run.
+      <p class="shortcomment cmt">This is called within the example pipe.persist.</p><div class="fullcomment"><div class="comment cmt"><p>This is called within the example pipe.persist.
 This calls <span class="extype" name="mapper.persist">mapper.persist</span>, which will check to see what data to send down the pipeline (again?).
-Then, it will call <span class="extype" name="p1.run">p1.run</span> and <span class="extype" name="p2.run">p2.run</span>, moving the run call along the pipeline.
+Then, it will call <span class="extype" name="p1.persist">p1.persist</span> and <span class="extype" name="p2.persist">p2.persist</span>, moving the run call along the pipeline.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.MapperPipe">MapperPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>

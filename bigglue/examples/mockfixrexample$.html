@@ -153,6 +153,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="GitFeatures.html" title=""></a>
+                        <a href="GitFeatures.html" title="">
+                          GitFeatures
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo."></a>
                         <a href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo.">
                           GitID
@@ -177,10 +183,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="MockProtocol2$.html" title="This
-"></a>
-                        <a href="MockProtocol2$.html" title="This
-">
+                        <a class="object" href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18."></a>
+                        <a href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18.">
                           MockProtocol2
                         </a>
                       </li><li class="current-entities indented2">
@@ -191,8 +195,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="" title="This is an example that was created to get a glimpse of BigGlue."></a>
-                        <a href="" title="This is an example that was created to get a glimpse of BigGlue.">
+                        <a class="object" href="" title="This is the actual code for the simple example."></a>
+                        <a href="" title="This is the actual code for the simple example.">
                           mockfixrexample
                         </a>
                       </li>
@@ -223,21 +227,14 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This is an example that was created to get a glimpse of BigGlue.
-In practice, this is kind of simple, being something that clones a repo, takes the commits, and finds which author
-created the most commits.
-First, we need to specify the data types, which are specified with <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a>, <a href="GitRepo.html" class="extype" name="bigglue.examples.GitRepo">GitRepo</a>, <a href="GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">GitCommitInfo</a>, and <a href="GitCommitGroups.html" class="extype" name="bigglue.examples.GitCommitGroups">GitCommitGroups</a>.
-Then, we need to specify the data computations, specified with <a href="Clone.html" class="extype" name="bigglue.examples.Clone">Clone</a>, <a href="CommitExtraction.html" class="extype" name="bigglue.examples.CommitExtraction">CommitExtraction</a>, and <a href="FindAuthor.html" class="extype" name="bigglue.examples.FindAuthor">FindAuthor</a>
-Then, since we are dealing with <span class="extype" name="SolrDataMap">SolrDataMap</span>s, we need Serializers for them, which are <a href="GitIDSerializer$.html" class="extype" name="bigglue.examples.GitIDSerializer">GitIDSerializer</a>, <a href="GitRepoSerializer$.html" class="extype" name="bigglue.examples.GitRepoSerializer">GitRepoSerializer</a>,
-<a href="GitCommitInfoSerializer$.html" class="extype" name="bigglue.examples.GitCommitInfoSerializer">GitCommitInfoSerializer</a>, and <a href="GitCommitGroupSerializer$.html" class="extype" name="bigglue.examples.GitCommitGroupSerializer">GitCommitGroupSerializer</a>.
-This object contains the actual code for the simple example.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This is the actual code for the simple example.
 It first gets the configuration file with <span class="extype" name="PipeConfig.newConfig">PipeConfig.newConfig</span>
 Then, it creates a few <span class="extype" name="SolrDataMap">SolrDataMap</span>s to put the data in within each step.
 To start, it also puts in a Git ID into gitID for the sake of having a starting point for the example.
 Then, with gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMap:-+FindAuthor()+-&gt;authorMap, it creates this:
 <a href="../pipes/ReducerPipe.html" class="extype" name="bigglue.pipes.ReducerPipe">bigglue.pipes.ReducerPipe</a>(<a href="../pipes/MapperPipe.html" class="extype" name="bigglue.pipes.MapperPipe">bigglue.pipes.MapperPipe</a>(<a href="../pipes/MapperPipe.html" class="extype" name="bigglue.pipes.MapperPipe">bigglue.pipes.MapperPipe</a>(<a href="../pipes/Implicits$$DataNode.html" class="extype" name="bigglue.pipes.Implicits.DataNode">bigglue.pipes.Implicits.DataNode</a>(gitID), Clone(), <a href="../pipes/Implicits$$DataNode.html" class="extype" name="bigglue.pipes.Implicits.DataNode">bigglue.pipes.Implicits.DataNode</a>(clonedMap)), CommitExtraction(), <a href="../pipes/Implicits$$DataNode.html" class="extype" name="bigglue.pipes.Implicits.DataNode">bigglue.pipes.Implicits.DataNode</a>(commitInfoMap)), FindAuthor(), <a href="../pipes/Implicits$$DataNode.html" class="extype" name="bigglue.pipes.Implicits.DataNode">bigglue.pipes.Implicits.DataNode</a>(authorMap))
 Then, with a pipe, we run <a href="../pipes/Pipe.html#check(conf:bigglue.configurations.PipeConfig):Unit" class="extmbr" name="bigglue.pipes.Pipe#check">bigglue.pipes.Pipe.check</a> and <a href="../pipes/Pipe.html#init(conf:bigglue.configurations.PipeConfig):Unit" class="extmbr" name="bigglue.pipes.Pipe#init">bigglue.pipes.Pipe.init</a> to initialize the pipeline.
-Finally, we run <a href="../pipes/Pipe.html#run():Unit" class="extmbr" name="bigglue.pipes.Pipe#run">bigglue.pipes.Pipe.run</a> to start/resume the pipeline.
+Finally, we run <a href="../pipes/Pipe.html#persist():Unit" class="extmbr" name="bigglue.pipes.Pipe#persist">bigglue.pipes.Pipe.persist</a> to start/resume the pipeline.
 </p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -343,7 +340,7 @@ Finally, we run <a href="../pipes/Pipe.html#run():Unit" class="extmbr" name="big
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="bigglue.examples.mockfixrexample#IStringToGitID" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="bigglue.examples.mockfixrexample#IStringToGitID" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="IStringToGitID(i:bigglue.data.I[String]):bigglue.examples.GitID"></a><a id="IStringToGitID(I[String]):GitID"></a>
       <span class="permalink">
       <a href="../../bigglue/examples/mockfixrexample$.html#IStringToGitID(i:bigglue.data.I[String]):bigglue.examples.GitID" title="Permalink">
@@ -358,7 +355,13 @@ Finally, we run <a href="../pipes/Pipe.html#run():Unit" class="extmbr" name="big
         <span class="name">IStringToGitID</span><span class="params">(<span name="i">i: <a href="../data/I.html" class="extype" name="bigglue.data.I">I</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">def IStringToGitID(i: I[String]): GitID = {
+   val slash = i.a.indexOf('/')
+   GitID(i.a.substring(0, slash), i.a.substring(slash+1))
+ }</p><div class="fullcomment"><div class="comment cmt"><p>def IStringToGitID(i: I[String]): GitID = {
+   val slash = i.a.indexOf('/')
+   GitID(i.a.substring(0, slash), i.a.substring(slash+1))
+ }</p><p>This is literally just a serialization thing done here just so we have some sort of data to work with.</p></div><dl class="paramcmts block"><dt class="param">i</dt><dd class="cmt"><p>The string of the User and Github Repo</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a> from i.</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -514,7 +517,22 @@ Finally, we run <a href="../pipes/Pipe.html#run():Unit" class="extmbr" name="big
         <span class="name">main</span><span class="params">(<span name="args">args: <a href="http://www.scala-lang.org/api/2.12.3/scala/Array.html#scala.Array" class="extype" name="scala.Array">Array</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">val config = <span class="extype" name="PipeConfig.newConfig()">PipeConfig.newConfig()</span>
+val textMap = new <span class="extype" name="TextFileDataMap">TextFileDataMap</span>(&quot;src/main/mockfixrexample/firstOne.txt&quot;)
+val gitID = new <span class="extype" name="SolrDataMap">SolrDataMap</span>[GitID, GitID](GitIDSerializer, &quot;GitIDs&quot;)
+textMap.all().foreach{
+  input =&gt; val gID = <a href="#IStringToGitID(i:bigglue.data.I[String]):bigglue.examples.GitID" class="extmbr" name="bigglue.examples.mockfixrexample#IStringToGitID">IStringToGitID</a>(input)
+    gitID.put_(gID, gID)
+}
+val clonedMap = new SolrDataMap[GitRepo, GitRepo](GitRepoSerializer, &quot;GitRepos&quot;)
+val commitInfoMap = new SolrDataMap[GitCommitInfo, GitCommitInfo](GitCommitInfoSerializer, &quot;GitCommitInfo&quot;)
+val authorMap = new SolrDataMap[Identity[GitCommitGroups], GitCommitGroups](GitCommitGroupSerializer, &quot;GitAuthors&quot;)
+//val featureMap = new SolrDataMap[GitFeatures, GitFeatures](GitFeatureSerializer, &quot;GitFeatures&quot;)
+import bigglue.pipes.Implicits._
+val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMap:-+FindAuthor()+-&gt;authorMap //:--FeatureExtraction()--&gt;featureMap
+pipe.check(config)
+pipe.init(config)
+pipe.persist()</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">

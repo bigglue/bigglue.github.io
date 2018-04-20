@@ -153,6 +153,12 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="GitFeatures.html" title=""></a>
+                        <a href="GitFeatures.html" title="">
+                          GitFeatures
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo."></a>
                         <a href="GitID.html" title="This is an Identifiable that represents a Github ID for a repo.">
                           GitID
@@ -177,10 +183,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="MockProtocol2$.html" title="This
-"></a>
-                        <a href="MockProtocol2$.html" title="This
-">
+                        <a class="object" href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18."></a>
+                        <a href="MockProtocol2$.html" title="Created by chanceroberts on 4/2/18.">
                           MockProtocol2
                         </a>
                       </li><li class="current-entities indented2">
@@ -191,8 +195,8 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="mockfixrexample$.html" title="This is an example that was created to get a glimpse of BigGlue."></a>
-                        <a href="mockfixrexample$.html" title="This is an example that was created to get a glimpse of BigGlue.">
+                        <a class="object" href="mockfixrexample$.html" title="This is the actual code for the simple example."></a>
+                        <a href="mockfixrexample$.html" title="This is the actual code for the simple example.">
                           mockfixrexample
                         </a>
                       </li>
@@ -398,7 +402,7 @@
         <span class="name">deserialize_</span><span class="params">(<span name="json">json: <span class="extype" name="spray.json.JsObject">JsObject</span></span>)</span><span class="result">: <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.examples.GitIDSerializer">GitIDSerializer</a> → <a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a></dd></dl></div>
+      <p class="shortcomment cmt">This needs to be implemented by the serializer; This tells you how to deserialize the object.</p><div class="fullcomment"><div class="comment cmt"><p>This needs to be implemented by the serializer; This tells you how to deserialize the object.</p></div><dl class="paramcmts block"><dt class="param">json</dt><dd class="cmt"><p>The JSON Representation of a (flattened) JSON object.</p></dd><dt>returns</dt><dd class="cmt"><p>The unserialized Data.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.examples.GitIDSerializer">GitIDSerializer</a> → <a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a></dd></dl></div>
     </li><li name="bigglue.data.serializers.JsonSerializer#deserialize_" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deserialize_(str:String):Data"></a><a id="deserialize_(String):GitID"></a>
       <span class="permalink">
@@ -414,7 +418,9 @@
         <span class="name">deserialize_</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a> → <a href="../data/serializers/BasicSerializer.html" class="extype" name="bigglue.data.serializers.BasicSerializer">BasicSerializer</a></dd></dl></div>
+      <p class="shortcomment cmt">This takes care of the deserialization of the JSON.</p><div class="fullcomment"><div class="comment cmt"><p>This takes care of the deserialization of the JSON.
+First, it takes the serialized string and turns it into the <span class="extype" name="JsObject">JsObject</span> representation of JSON.
+Then, it takes care of the meta-data, and then calls <span class="extype" name="deserialize_()">deserialize_()</span> on the rest of the data.</p></div><dl class="paramcmts block"><dt class="param">str</dt><dd class="cmt"><p>The serialized version of the object.</p></dd><dt>returns</dt><dd class="cmt"><p>The object that got rebuilt from the serialization.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a> → <a href="../data/serializers/BasicSerializer.html" class="extype" name="bigglue.data.serializers.BasicSerializer">BasicSerializer</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -596,7 +602,8 @@
         <span class="name">serializeToJson</span><span class="params">(<span name="d">d: <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a></span>)</span><span class="result">: <span class="extype" name="spray.json.JsObject">JsObject</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a></dd></dl></div>
+      <p class="shortcomment cmt">This does all of the serialization of data to a JSON Representation <span class="extype" name="JsObject">JsObject</span>.</p><div class="fullcomment"><div class="comment cmt"><p>This does all of the serialization of data to a JSON Representation <span class="extype" name="JsObject">JsObject</span>.
+This calls <a href="../data/serializers/JsonSerializer.html#serializeToJson_(d:Data):spray.json.JsObject" class="extmbr" name="bigglue.data.serializers.JsonSerializer#serializeToJson_">serializeToJson_</a> for the actual serialization, but this takes care of the meta-data of the Identifiable.</p></div><dl class="paramcmts block"><dt class="param">d</dt><dd class="cmt"><p>The Identifiable that needs to be serialized.</p></dd><dt>returns</dt><dd class="cmt"><p>A JSON Representation of a (flattened) JSON Object.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a></dd></dl></div>
     </li><li name="bigglue.examples.GitIDSerializer#serializeToJson_" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="serializeToJson_(d:bigglue.examples.GitID):spray.json.JsObject"></a><a id="serializeToJson_(GitID):JsObject"></a>
       <span class="permalink">
@@ -612,7 +619,7 @@
         <span class="name">serializeToJson_</span><span class="params">(<span name="d">d: <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a></span>)</span><span class="result">: <span class="extype" name="spray.json.JsObject">JsObject</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.examples.GitIDSerializer">GitIDSerializer</a> → <a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a></dd></dl></div>
+      <p class="shortcomment cmt">This needs to be implemented by the serializer; This tells you how to serialize the object.</p><div class="fullcomment"><div class="comment cmt"><p>This needs to be implemented by the serializer; This tells you how to serialize the object.</p></div><dl class="paramcmts block"><dt class="param">d</dt><dd class="cmt"><p>The Data that needs to be serialized.</p></dd><dt>returns</dt><dd class="cmt"><p>A JSON Representation of a (flattened) JSON object.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.examples.GitIDSerializer">GitIDSerializer</a> → <a href="../data/serializers/JsonSerializer.html" class="extype" name="bigglue.data.serializers.JsonSerializer">JsonSerializer</a></dd></dl></div>
     </li><li name="bigglue.data.serializers.JsonSerializer#serialize_" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="serialize_(d:Data):String"></a><a id="serialize_(GitID):String"></a>
       <span class="permalink">
