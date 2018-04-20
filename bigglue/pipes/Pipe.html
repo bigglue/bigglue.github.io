@@ -315,7 +315,8 @@ See either one of those for further details into what the pipelines end up doing
       </span>
       
       <p class="shortcomment cmt">This is called within the example with pipe.check(conf).</p><div class="fullcomment"><div class="comment cmt"><p>This is called within the example with pipe.check(conf).
-In basic terms, this checks to see whether the pipeline that we have created is valid.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are checking with.</p></dd></dl></div>
+In basic terms, this checks to see whether the pipeline that we have created is valid.
+See <span class="extype" name="MapperPipe.check()">MapperPipe.check()</span> or <span class="extype" name="ReducerPipe.check()">ReducerPipe.check()</span></p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are checking with.</p></dd></dl></div>
     </li><li name="bigglue.pipes.Pipe#end" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="end():bigglue.store.DataStore[End]"></a><a id="end():DataStore[End]"></a>
       <span class="permalink">
@@ -364,7 +365,8 @@ In basic terms, this checks to see whether the pipeline that we have created is 
       </span>
       
       <p class="shortcomment cmt">This is called with the example with pipe.init(conf).</p><div class="fullcomment"><div class="comment cmt"><p>This is called with the example with pipe.init(conf).
-This initializes the pipeline and all of the parts within it.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are initializing with. This ideally is the configuration file
+This initializes the pipeline and all of the parts within it.
+See <span class="extype" name="MapperPipe.init()">MapperPipe.init()</span> or <span class="extype" name="ReducerPipe.init()">ReducerPipe.init()</span></p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are initializing with. This ideally is the configuration file
             that is being used to check the pipeline.</p></dd></dl></div>
     </li><li name="bigglue.pipes.Pipe#terminate" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="terminate():Unit"></a>
@@ -822,7 +824,7 @@ and can be seen after gitID and clonedMap.</p></div><dl class="paramcmts block">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="bigglue.pipes.Pipe#persist" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="bigglue.pipes.Pipe#persist" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="persist():Unit"></a>
       <span class="permalink">
       <a href="../../bigglue/pipes/Pipe.html#persist():Unit" title="Permalink">
@@ -837,7 +839,9 @@ and can be seen after gitID and clonedMap.</p></div><dl class="paramcmts block">
         <span class="name">persist</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <p class="shortcomment cmt">This starts/restarts the pipeline.</p>
+      <p class="shortcomment cmt">This starts/restarts the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This starts/restarts the pipeline.
+See <span class="extype" name="MapperPipe.persist()">MapperPipe.persist()</span> or <span class="extype" name="ReducerPipe.persist()">ReducerPipe.persist()</span>
+</p></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

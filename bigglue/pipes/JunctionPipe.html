@@ -471,7 +471,8 @@ and can be seen after gitID and clonedMap.</p></div><dl class="paramcmts block">
       </span>
       
       <p class="shortcomment cmt">This is called within the example with pipe.check(conf).</p><div class="fullcomment"><div class="comment cmt"><p>This is called within the example with pipe.check(conf).
-In basic terms, this checks to see whether the pipeline that we have created is valid.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are checking with.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.JunctionPipe">JunctionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
+In basic terms, this checks to see whether the pipeline that we have created is valid.
+See <span class="extype" name="MapperPipe.check()">MapperPipe.check()</span> or <span class="extype" name="ReducerPipe.check()">ReducerPipe.check()</span></p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are checking with.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.JunctionPipe">JunctionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -699,7 +700,8 @@ In basic terms, this checks to see whether the pipeline that we have created is 
       </span>
       
       <p class="shortcomment cmt">This is called with the example with pipe.init(conf).</p><div class="fullcomment"><div class="comment cmt"><p>This is called with the example with pipe.init(conf).
-This initializes the pipeline and all of the parts within it.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are initializing with. This ideally is the configuration file
+This initializes the pipeline and all of the parts within it.
+See <span class="extype" name="MapperPipe.init()">MapperPipe.init()</span> or <span class="extype" name="ReducerPipe.init()">ReducerPipe.init()</span></p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are initializing with. This ideally is the configuration file
             that is being used to check the pipeline.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.JunctionPipe">JunctionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -813,6 +815,7 @@ This initializes the pipeline and all of the parts within it.</p></div><dl class
       </span>
       
       <p class="shortcomment cmt">This starts/restarts the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This starts/restarts the pipeline.
+See <span class="extype" name="MapperPipe.persist()">MapperPipe.persist()</span> or <span class="extype" name="ReducerPipe.persist()">ReducerPipe.persist()</span>
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.JunctionPipe">JunctionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
