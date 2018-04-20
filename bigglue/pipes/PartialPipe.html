@@ -109,8 +109,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="bigglue">bigglue</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="CompositionPipe.html" title=""></a>
-                        <a href="CompositionPipe.html" title="">
+                        <a class="class" href="CompositionPipe.html" title="This is a type of pipe that takes two input data stores and combines them into an output data store."></a>
+                        <a href="CompositionPipe.html" title="This is a type of pipe that takes two input data stores and combines them into an output data store.">
                           CompositionPipe
                         </a>
                       </li><li class="current-entities indented2">
@@ -145,20 +145,20 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialMapperPipe.html" title=""></a>
-                        <a href="PartialMapperPipe.html" title="">
+                        <a class="class" href="PartialMapperPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialMapperPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialMapperPipe
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="" title=""></a>
-                        <a href="" title="">
+                        <a class="class" href="" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialPipe
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialReducerPipe.html" title=""></a>
-                        <a href="PartialReducerPipe.html" title="">
+                        <a class="class" href="PartialReducerPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialReducerPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialReducerPipe
                         </a>
                       </li><li class="current-entities indented2">
@@ -215,7 +215,12 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This is a pipe that has no input data store, but has a computation and an ending pipeline.
+This is generated with the --&gt; or +-&gt; calls in the pipeline.
+You can run this in the case of ParallelPipes, and created a sequence of pipes, but that's out of scope for this example.
+Within the example, we just use this as a stepping point before <a href="MapperPipe.html" class="extype" name="bigglue.pipes.MapperPipe">MapperPipe</a> and <a href="ReducerPipe.html" class="extype" name="bigglue.pipes.ReducerPipe">ReducerPipe</a></p></div><dl class="paramcmts block"><dt class="tparam">Input</dt><dd class="cmt"><p>The data type that the computation puts in. <a href="../examples/GitID.html" class="extype" name="bigglue.examples.GitID">bigglue.examples.GitID</a>
+              In the case of Clone()--&gt;clonedMap and <a href="../examples/GitRepo.html" class="extype" name="bigglue.examples.GitRepo">bigglue.examples.GitRepo</a> for CommitExtraction()--&gt;commitInfoMap,
+              and <a href="../examples/GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">bigglue.examples.GitCommitInfo</a> for FindAuthor()+-&gt;authorMap.</p></dd><dt class="tparam">End</dt><dd class="cmt"><p>The type of the data store that shows up at the end of the pipeline; <a href="../examples/GitCommitGroups.html" class="extype" name="bigglue.examples.GitCommitGroups">bigglue.examples.GitCommitGroups</a> in this case.</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -290,7 +295,7 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
         <span class="name">PartialPipe</span><span class="params">()</span>
       </span>
       
-      
+      <p class="shortcomment cmt"></p>
     </li></ol>
             </div>
 
@@ -298,7 +303,7 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="bigglue.pipes.PartialPipe#check" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="bigglue.pipes.PartialPipe#check" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="check(conf:bigglue.configurations.PipeConfig,input:bigglue.store.DataStore[Input]):Unit"></a><a id="check(PipeConfig,DataStore[Input]):Unit"></a>
       <span class="permalink">
       <a href="../../bigglue/pipes/PartialPipe.html#check(conf:bigglue.configurations.PipeConfig,input:bigglue.store.DataStore[Input]):Unit" title="Permalink">
@@ -313,8 +318,9 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
         <span class="name">check</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="input">input: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<span class="extype" name="bigglue.pipes.PartialPipe.Input">Input</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      
-    </li><li name="bigglue.pipes.PartialPipe#end" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">This is called within the example with pipe.check(conf).</p><div class="fullcomment"><div class="comment cmt"><p>This is called within the example with pipe.check(conf).
+In basic terms, this checks to see whether the pipeline that we have created is valid.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are checking with.</p></dd></dl></div>
+    </li><li name="bigglue.pipes.PartialPipe#end" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="end():bigglue.store.DataStore[End]"></a><a id="end():DataStore[End]"></a>
       <span class="permalink">
       <a href="../../bigglue/pipes/PartialPipe.html#end():bigglue.store.DataStore[End]" title="Permalink">
@@ -329,8 +335,8 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
         <span class="name">end</span><span class="params">()</span><span class="result">: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<span class="extype" name="bigglue.pipes.PartialPipe.End">End</span>]</span>
       </span>
       
-      
-    </li><li name="bigglue.pipes.PartialPipe#init" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">This is the data store at the end of the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This is the data store at the end of the pipeline.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The data store at the end of the pipeline.</p></dd></dl></div>
+    </li><li name="bigglue.pipes.PartialPipe#init" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="init(conf:bigglue.configurations.PipeConfig,input:bigglue.store.DataStore[Input]):Unit"></a><a id="init(PipeConfig,DataStore[Input]):Unit"></a>
       <span class="permalink">
       <a href="../../bigglue/pipes/PartialPipe.html#init(conf:bigglue.configurations.PipeConfig,input:bigglue.store.DataStore[Input]):Unit" title="Permalink">
@@ -345,7 +351,9 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
         <span class="name">init</span><span class="params">(<span name="conf">conf: <a href="../configurations/PipeConfig.html" class="extype" name="bigglue.configurations.PipeConfig">PipeConfig</a></span>, <span name="input">input: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<span class="extype" name="bigglue.pipes.PartialPipe.Input">Input</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">This is called with the example with pipe.init(conf).</p><div class="fullcomment"><div class="comment cmt"><p>This is called with the example with pipe.init(conf).
+This initializes the pipeline and all of the parts within it.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are initializing with. This ideally is the configuration file
+            that is being used to check the pipeline.</p></dd></dl></div>
     </li><li name="bigglue.pipes.PartialPipe#terminate" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="terminate():Unit"></a>
       <span class="permalink">
@@ -797,7 +805,7 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
         <span class="name">persist</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">This starts/restarts the pipeline.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">

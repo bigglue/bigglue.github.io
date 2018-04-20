@@ -109,8 +109,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="bigglue">bigglue</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="CompositionPipe.html" title=""></a>
-                        <a href="CompositionPipe.html" title="">
+                        <a class="class" href="CompositionPipe.html" title="This is a type of pipe that takes two input data stores and combines them into an output data store."></a>
+                        <a href="CompositionPipe.html" title="This is a type of pipe that takes two input data stores and combines them into an output data store.">
                           CompositionPipe
                         </a>
                       </li><li class="current-entities indented2">
@@ -145,20 +145,20 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialMapperPipe.html" title=""></a>
-                        <a href="PartialMapperPipe.html" title="">
+                        <a class="class" href="PartialMapperPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialMapperPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialMapperPipe
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialPipe.html" title=""></a>
-                        <a href="PartialPipe.html" title="">
+                        <a class="class" href="PartialPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialPipe
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialReducerPipe.html" title=""></a>
-                        <a href="PartialReducerPipe.html" title="">
+                        <a class="class" href="PartialReducerPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialReducerPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialReducerPipe
                         </a>
                       </li><li class="current-entities indented2">
@@ -316,7 +316,7 @@ See either one of those for further details into what the pipelines end up doing
       
       <p class="shortcomment cmt">This is called within the example with pipe.check(conf).</p><div class="fullcomment"><div class="comment cmt"><p>This is called within the example with pipe.check(conf).
 In basic terms, this checks to see whether the pipeline that we have created is valid.</p></div><dl class="paramcmts block"><dt class="param">conf</dt><dd class="cmt"><p>The configuration file that we are checking with.</p></dd></dl></div>
-    </li><li name="bigglue.pipes.Pipe#end" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="bigglue.pipes.Pipe#end" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="end():bigglue.store.DataStore[End]"></a><a id="end():DataStore[End]"></a>
       <span class="permalink">
       <a href="../../bigglue/pipes/Pipe.html#end():bigglue.store.DataStore[End]" title="Permalink">
@@ -331,8 +331,8 @@ In basic terms, this checks to see whether the pipeline that we have created is 
         <span class="name">end</span><span class="params">()</span><span class="result">: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<span class="extype" name="bigglue.pipes.Pipe.End">End</span>]</span>
       </span>
       
-      
-    </li><li name="bigglue.pipes.Pipe#head" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">This is the data store at the end of the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This is the data store at the end of the pipeline.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The data store at the end of the pipeline. In all cases, this is authorMap in the example.</p></dd></dl></div>
+    </li><li name="bigglue.pipes.Pipe#head" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="head():bigglue.store.DataStore[Head]"></a><a id="head():DataStore[Head]"></a>
       <span class="permalink">
       <a href="../../bigglue/pipes/Pipe.html#head():bigglue.store.DataStore[Head]" title="Permalink">
@@ -347,7 +347,7 @@ In basic terms, this checks to see whether the pipeline that we have created is 
         <span class="name">head</span><span class="params">()</span><span class="result">: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<span class="extype" name="bigglue.pipes.Pipe.Head">Head</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">This is the data store at the start of the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This is the data store at the start of the pipeline.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The data store at the start of the pipeline.</p></dd></dl></div>
     </li><li name="bigglue.pipes.Pipe#init" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="init(conf:bigglue.configurations.PipeConfig):Unit"></a><a id="init(PipeConfig):Unit"></a>
       <span class="permalink">

@@ -109,8 +109,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="bigglue">bigglue</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="" title=""></a>
-                        <a href="" title="">
+                        <a class="class" href="" title="This is a type of pipe that takes two input data stores and combines them into an output data store."></a>
+                        <a href="" title="This is a type of pipe that takes two input data stores and combines them into an output data store.">
                           CompositionPipe
                         </a>
                       </li><li class="current-entities indented2">
@@ -145,20 +145,20 @@
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialMapperPipe.html" title=""></a>
-                        <a href="PartialMapperPipe.html" title="">
+                        <a class="class" href="PartialMapperPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialMapperPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialMapperPipe
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialPipe.html" title=""></a>
-                        <a href="PartialPipe.html" title="">
+                        <a class="class" href="PartialPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialPipe
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PartialReducerPipe.html" title=""></a>
-                        <a href="PartialReducerPipe.html" title="">
+                        <a class="class" href="PartialReducerPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline."></a>
+                        <a href="PartialReducerPipe.html" title="This is a pipe that has no input data store, but has a computation and an ending pipeline.">
                           PartialReducerPipe
                         </a>
                       </li><li class="current-entities indented2">
@@ -215,7 +215,7 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This is a type of pipe that takes two input data stores and combines them into an output data store.</p></div><dl class="paramcmts block"><dt class="tparam">HeadL</dt><dd class="cmt"><p>The type of the data store at the beginning of the left pipeline.</p></dd><dt class="tparam">HeadR</dt><dd class="cmt"><p>The type of the data store at the beginning of the right pipeline.</p></dd><dt class="tparam">InputL</dt><dd class="cmt"><p>The type of the data store that's feeding in on the left side.</p></dd><dt class="tparam">InputR</dt><dd class="cmt"><p>The type of the data store that's feeding in on the right side.</p></dd><dt class="tparam">Output</dt><dd class="cmt"><p>The type of the data store that's the output data store is going to.</p></dd><dt class="tparam">End</dt><dd class="cmt"><p>The type of the data store that's at the end of the output pipeline.</p></dd><dt class="param">p1</dt><dd class="cmt"><p>The pipeline that feeds into the left side of the pipeline.</p></dd><dt class="param">composer</dt><dd class="cmt"><p>The <span class="extype" name="PairwiseComposer">PairwiseComposer</span> that composes the two data stores.</p></dd><dt class="param">p2</dt><dd class="cmt"><p>The pipeline that feeds into the right side of the pipeline.</p></dd><dt class="param">o</dt><dd class="cmt"><p>The pipeline that is being outputted into.</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -270,7 +270,7 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="bigglue.pipes.CompositionPipe#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="bigglue.pipes.CompositionPipe#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;init&gt;(p1:bigglue.pipes.Pipe[HeadL,InputL],composer:bigglue.computations.PairwiseComposer[InputL,InputR,Output],p2:bigglue.pipes.Pipe[HeadR,InputR],o:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.CompositionPipe[HeadL,HeadR,InputL,InputR,Output,End]"></a><a id="&lt;init&gt;:CompositionPipe[HeadL,HeadR,InputL,InputR,Output,End]"></a>
       <span class="permalink">
       <a href="../../bigglue/pipes/CompositionPipe.html#&lt;init&gt;(p1:bigglue.pipes.Pipe[HeadL,InputL],composer:bigglue.computations.PairwiseComposer[InputL,InputR,Output],p2:bigglue.pipes.Pipe[HeadR,InputR],o:bigglue.pipes.Pipe[Output,End]):bigglue.pipes.CompositionPipe[HeadL,HeadR,InputL,InputR,Output,End]" title="Permalink">
@@ -285,7 +285,7 @@ val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMa
         <span class="name">CompositionPipe</span><span class="params">(<span name="p1">p1: <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a>[<span class="extype" name="bigglue.pipes.CompositionPipe.HeadL">HeadL</span>, <span class="extype" name="bigglue.pipes.CompositionPipe.InputL">InputL</span>]</span>, <span name="composer">composer: <a href="../computations/PairwiseComposer.html" class="extype" name="bigglue.computations.PairwiseComposer">PairwiseComposer</a>[<span class="extype" name="bigglue.pipes.CompositionPipe.InputL">InputL</span>, <span class="extype" name="bigglue.pipes.CompositionPipe.InputR">InputR</span>, <span class="extype" name="bigglue.pipes.CompositionPipe.Output">Output</span>]</span>, <span name="p2">p2: <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a>[<span class="extype" name="bigglue.pipes.CompositionPipe.HeadR">HeadR</span>, <span class="extype" name="bigglue.pipes.CompositionPipe.InputR">InputR</span>]</span>, <span name="o">o: <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a>[<span class="extype" name="bigglue.pipes.CompositionPipe.Output">Output</span>, <span class="extype" name="bigglue.pipes.CompositionPipe.End">End</span>]</span>)</span>
       </span>
       
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">p1</dt><dd class="cmt"><p>The pipeline that feeds into the left side of the pipeline.</p></dd><dt class="param">composer</dt><dd class="cmt"><p>The <span class="extype" name="PairwiseComposer">PairwiseComposer</span> that composes the two data stores.</p></dd><dt class="param">p2</dt><dd class="cmt"><p>The pipeline that feeds into the right side of the pipeline.</p></dd><dt class="param">o</dt><dd class="cmt"><p>The pipeline that is being outputted into.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -525,7 +525,7 @@ In basic terms, this checks to see whether the pipeline that we have created is 
         <span class="name">end</span><span class="params">()</span><span class="result">: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<span class="extype" name="bigglue.pipes.CompositionPipe.End">End</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.CompositionPipe">CompositionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
+      <p class="shortcomment cmt">This is the data store at the end of the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This is the data store at the end of the pipeline.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The data store at the end of the pipeline. In all cases, this is authorMap in the example.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.CompositionPipe">CompositionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
     </li><li name="scala.Predef.Ensuring#ensuring" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ensuring(cond:A=&gt;Boolean,msg:=&gt;Any):A"></a><a id="ensuring((CompositionPipe[HeadL,HeadR,InputL,InputR,Output,End])⇒Boolean,⇒Any):CompositionPipe[HeadL,HeadR,InputL,InputR,Output,End]"></a>
       <span class="permalink">
@@ -698,7 +698,7 @@ In basic terms, this checks to see whether the pipeline that we have created is 
         <span class="name">head</span><span class="params">()</span><span class="result">: <a href="../store/DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a>[<a href="../data/Either.html" class="extype" name="bigglue.data.Either">Either</a>[<span class="extype" name="bigglue.pipes.CompositionPipe.HeadL">HeadL</span>, <span class="extype" name="bigglue.pipes.CompositionPipe.HeadR">HeadR</span>]]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.CompositionPipe">CompositionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
+      <p class="shortcomment cmt">This is the data store at the start of the pipeline.</p><div class="fullcomment"><div class="comment cmt"><p>This is the data store at the start of the pipeline.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The data store at the start of the pipeline.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.pipes.CompositionPipe">CompositionPipe</a> → <a href="Pipe.html" class="extype" name="bigglue.pipes.Pipe">Pipe</a></dd></dl></div>
     </li><li name="bigglue.pipes.CompositionPipe#init" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="init(conf:bigglue.configurations.PipeConfig):Unit"></a><a id="init(PipeConfig):Unit"></a>
       <span class="permalink">
