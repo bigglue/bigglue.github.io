@@ -145,8 +145,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="bigglue.store.instances">instances</a></dd></dl></div>
     </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="SolrBackend.html" title="Created by chanceroberts on 8/25/17."></a>
-                        <a href="SolrBackend.html" title="Created by chanceroberts on 8/25/17.">
+                        <a class="class" href="SolrBackend.html" title="The SolrBackend keeps track of an evolving Solr database."></a>
+                        <a href="SolrBackend.html" title="The SolrBackend keeps track of an evolving Solr database.">
                           SolrBackend
                         </a>
                       </li><li class="current-entities indented4">
@@ -981,7 +981,7 @@ pipeline if the data store is connected to the pipeline.</p></div><dl class="par
         <span class="name">put_</span><span class="params">(<span name="data">data: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="bigglue.store.instances.solr.SolrDataMap.Data">Data</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <p class="shortcomment cmt">This actually puts the data into the data store.</p><div class="fullcomment"><div class="comment cmt"><p>This actually puts the data into the data store.</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>The data to be put into the data store.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.store.instances.solr.SolrDataMap">SolrDataMap</a> → <a href="../../DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a></dd></dl></div>
+      <p class="shortcomment cmt">Serializes everything, and then creates the key as the object itself.</p><div class="fullcomment"><div class="comment cmt"><p>Serializes everything, and then creates the key as the object itself.</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>The data to be put into the data store.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.store.instances.solr.SolrDataMap">SolrDataMap</a> → <a href="../../DataStore.html" class="extype" name="bigglue.store.DataStore">DataStore</a></dd></dl></div>
     </li><li name="bigglue.store.instances.solr.SolrDataMap#put_" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="put_(key:Key,data:Data):Unit"></a><a id="put_(Key,Data):Unit"></a>
       <span class="permalink">
@@ -997,7 +997,7 @@ pipeline if the data store is connected to the pipeline.</p></div><dl class="par
         <span class="name">put_</span><span class="params">(<span name="key">key: <span class="extype" name="bigglue.store.instances.solr.SolrDataMap.Key">Key</span></span>, <span name="data">data: <span class="extype" name="bigglue.store.instances.solr.SolrDataMap.Data">Data</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.store.instances.solr.SolrDataMap">SolrDataMap</a> → <a href="../../DataMap.html" class="extype" name="bigglue.store.DataMap">DataMap</a></dd></dl></div>
+      <p class="shortcomment cmt">Serializes the data under the key, and then puts that in Solr.</p><div class="fullcomment"><div class="comment cmt"><p>Serializes the data under the key, and then puts that in Solr.</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>The key in which the data should be filed under.</p></dd><dt class="param">data</dt><dd class="cmt"><p>The data in which we are putting into Solr.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="bigglue.store.instances.solr.SolrDataMap">SolrDataMap</a> → <a href="../../DataMap.html" class="extype" name="bigglue.store.DataMap">DataMap</a></dd></dl></div>
     </li><li name="bigglue.connectors.Upstream#registerConnector" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="registerConnector(connector:bigglue.connectors.Connector[Data]):Unit"></a><a id="registerConnector(Connector[Data]):Unit"></a>
       <span class="permalink">

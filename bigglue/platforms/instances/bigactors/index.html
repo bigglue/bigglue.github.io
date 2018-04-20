@@ -143,8 +143,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="bigglue.platforms.instances">instances</a></dd></dl></div>
     </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="trait" href="BigActor.html" title=""></a>
-                        <a href="BigActor.html" title="">
+                        <a class="trait" href="BigActor.html" title="How stuff gets computed with BigActorPlatforms"></a>
+                        <a href="BigActor.html" title="How stuff gets computed with BigActorPlatforms">
                           BigActor
                         </a>
                       </li><li class="current-entities indented4">
@@ -179,8 +179,8 @@
                         </a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="BigActorSupervisorActor.html" title=""></a>
-                        <a href="BigActorSupervisorActor.html" title="">
+                        <a class="class" href="BigActorSupervisorActor.html" title="The actor on top of everything that"></a>
+                        <a href="BigActorSupervisorActor.html" title="The actor on top of everything that">
                           BigActorSupervisorActor
                         </a>
                       </li><li class="current-entities indented4">
@@ -191,8 +191,8 @@
                         </a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="BigActorWorker.html" title=""></a>
-                        <a href="BigActorWorker.html" title="">
+                        <a class="class" href="BigActorWorker.html" title="This is the worker that actually does the jobs of the platform."></a>
+                        <a href="BigActorWorker.html" title="This is the worker that actually does the jobs of the platform.">
                           BigActorWorker
                         </a>
                       </li><li class="current-entities indented4">
@@ -318,12 +318,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="BigActor.html">
+        <a title="How stuff gets computed with BigActorPlatforms" href="BigActor.html">
               <span class="name">BigActor</span>
             </a><span class="tparams">[<span name="Input">Input</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">How stuff gets computed with BigActorPlatforms</p>
     </li><li name="bigglue.platforms.instances.bigactors.BigActorBinaryPlatform" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="BigActorBinaryPlatform[InputL&lt;:bigglue.data.Identifiable[InputL],InputR&lt;:bigglue.data.Identifiable[InputR],Output&lt;:bigglue.data.Identifiable[Output]]extendsBinaryPlatform[InputL,InputR,Output]withBigActor[bigglue.data.Pair[InputL,InputR]]"></a><a id="BigActorBinaryPlatform[InputL&lt;:Identifiable[InputL],InputR&lt;:Identifiable[InputR],Output&lt;:Identifiable[Output]]:BigActorBinaryPlatform[InputL,InputR,Output]"></a>
       <span class="permalink">
@@ -402,7 +402,7 @@ This is a subclass of <a href="BigActorUnaryPlatform.html" class="extype" name="
       
       <p class="shortcomment cmt">This is the default platform for the reducer.</p><div class="fullcomment"><div class="comment cmt"><p>This is the default platform for the reducer.</p></div><dl class="paramcmts block"><dt class="tparam">Input</dt><dd class="cmt"><p>The type of the data that needs to be computed. <a href="../../../examples/GitCommitInfo.html" class="extype" name="bigglue.examples.GitCommitInfo">bigglue.examples.GitCommitInfo</a> in this case, which is the type of commitInfoMap.
               This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd><dt class="tparam">Output</dt><dd class="cmt"><p>The type of the data that the input ends up being reduced to. Within the example, this will be <a href="../../../examples/GitCommitGroups.html" class="extype" name="bigglue.examples.GitCommitGroups">bigglue.examples.GitCommitGroups</a>.</p></dd></dl></div>
-    </li><li name="bigglue.platforms.instances.bigactors.BigActorSupervisorActor" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="bigglue.platforms.instances.bigactors.BigActorSupervisorActor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="BigActorSupervisorActor[Input&lt;:bigglue.data.Identifiable[Input],Output]extendsActor"></a><a id="BigActorSupervisorActor[Input&lt;:Identifiable[Input],Output]:BigActorSupervisorActor[Input,Output]"></a>
       <span class="permalink">
       <a href="../../../../bigglue/platforms/instances/bigactors/index.html#BigActorSupervisorActor[Input&lt;:bigglue.data.Identifiable[Input],Output]extendsActor" title="Permalink">
@@ -414,12 +414,12 @@ This is a subclass of <a href="BigActorUnaryPlatform.html" class="extype" name="
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="BigActorSupervisorActor.html">
+        <a title="The actor on top of everything that" href="BigActorSupervisorActor.html">
               <span class="name">BigActorSupervisorActor</span>
             </a><span class="tparams">[<span name="Input">Input &lt;: <a href="../../../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.platforms.instances.bigactors.BigActorSupervisorActor.Input">Input</span>]</span>, <span name="Output">Output</span>]</span><span class="result"> extends <a href="http://doc.akka.io/api/akka/2.4.17/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">The actor on top of everything that</p><div class="fullcomment"><div class="comment cmt"><p>The actor on top of everything that</p></div><dl class="paramcmts block"><dt class="tparam">Input</dt><dd class="cmt"><p>The type of the data that's being sent in. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd><dt class="tparam">Output</dt><dd class="cmt"><p>The type of the data that's being sent out. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd></dl></div>
     </li><li name="bigglue.platforms.instances.bigactors.BigActorUnaryPlatform" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="BigActorUnaryPlatform[Input&lt;:bigglue.data.Identifiable[Input],Output&lt;:bigglue.data.Identifiable[Output]]extendsUnaryPlatform[Input,Output]withBigActor[Input]"></a><a id="BigActorUnaryPlatform[Input&lt;:Identifiable[Input],Output&lt;:Identifiable[Output]]:BigActorUnaryPlatform[Input,Output]"></a>
       <span class="permalink">
@@ -440,7 +440,7 @@ This is a subclass of <a href="BigActorUnaryPlatform.html" class="extype" name="
       <p class="shortcomment cmt">This is the default platform of computation.</p><div class="fullcomment"><div class="comment cmt"><p>This is the default platform of computation. This attempts to compute through a list of inputs asynchronously.
 In more detail, Has a supervisor <a href="BigActorSupervisorActor.html" class="extype" name="bigglue.platforms.instances.bigactors.BigActorSupervisorActor">BigActorSupervisorActor</a> and a list of workers, <a href="BigActorWorker.html" class="extype" name="bigglue.platforms.instances.bigactors.BigActorWorker">BigActorWorker</a>.
 However, these are not necessary to understand the example, and is just an implementation detail.</p></div><dl class="paramcmts block"><dt class="tparam">Input</dt><dd class="cmt"><p>The type of the data that's being sent in. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd><dt class="tparam">Output</dt><dd class="cmt"><p>The type of the data that's being sent out. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd></dl></div>
-    </li><li name="bigglue.platforms.instances.bigactors.BigActorWorker" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="bigglue.platforms.instances.bigactors.BigActorWorker" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="BigActorWorker[Input&lt;:bigglue.data.Identifiable[Input],Output&lt;:bigglue.data.Identifiable[Output]]extendsActor"></a><a id="BigActorWorker[Input&lt;:Identifiable[Input],Output&lt;:Identifiable[Output]]:BigActorWorker[Input,Output]"></a>
       <span class="permalink">
       <a href="../../../../bigglue/platforms/instances/bigactors/index.html#BigActorWorker[Input&lt;:bigglue.data.Identifiable[Input],Output&lt;:bigglue.data.Identifiable[Output]]extendsActor" title="Permalink">
@@ -452,12 +452,12 @@ However, these are not necessary to understand the example, and is just an imple
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="BigActorWorker.html">
+        <a title="This is the worker that actually does the jobs of the platform." href="BigActorWorker.html">
               <span class="name">BigActorWorker</span>
             </a><span class="tparams">[<span name="Input">Input &lt;: <a href="../../../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.platforms.instances.bigactors.BigActorWorker.Input">Input</span>]</span>, <span name="Output">Output &lt;: <a href="../../../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.platforms.instances.bigactors.BigActorWorker.Output">Output</span>]</span>]</span><span class="result"> extends <a href="http://doc.akka.io/api/akka/2.4.17/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">This is the worker that actually does the jobs of the platform.</p><div class="fullcomment"><div class="comment cmt"><p>This is the worker that actually does the jobs of the platform.</p></div><dl class="paramcmts block"><dt class="tparam">Input</dt><dd class="cmt"><p>The type of the data that's being sent in. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd><dt class="tparam">Output</dt><dd class="cmt"><p>The type of the data that's being sent out. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd></dl></div>
     </li><li name="bigglue.platforms.instances.bigactors.BigActorWorkerActor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="BigActorWorkerActor[Input&lt;:bigglue.data.Identifiable[Input],Output&lt;:bigglue.data.Identifiable[Output]]extendsActor"></a><a id="BigActorWorkerActor[Input&lt;:Identifiable[Input],Output&lt;:Identifiable[Output]]:BigActorWorkerActor[Input,Output]"></a>
       <span class="permalink">
@@ -475,7 +475,8 @@ However, these are not necessary to understand the example, and is just an imple
             </a><span class="tparams">[<span name="Input">Input &lt;: <a href="../../../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.platforms.instances.bigactors.BigActorWorkerActor.Input">Input</span>]</span>, <span name="Output">Output &lt;: <a href="../../../data/Identifiable.html" class="extype" name="bigglue.data.Identifiable">Identifiable</a>[<span class="extype" name="bigglue.platforms.instances.bigactors.BigActorWorkerActor.Output">Output</span>]</span>]</span><span class="result"> extends <a href="http://doc.akka.io/api/akka/2.4.17/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a></span>
       </span>
       
-      <p class="shortcomment cmt">The actors that actually do the work of computing the tasks.</p><div class="fullcomment"><div class="comment cmt"><p>The actors that actually do the work of computing the tasks.</p></div><dl class="paramcmts block"><dt class="tparam">Input</dt><dd class="cmt"><p>The type of the data that's being sent in. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd><dt class="tparam">Output</dt><dd class="cmt"><p>The type of the data that's being sent out. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd></dl></div>
+      <p class="shortcomment cmt">The actors that actually do the work of computing the tasks.</p><div class="fullcomment"><div class="comment cmt"><p>The actors that actually do the work of computing the tasks.
+It sends stuff to the <a href="BigActorWorker.html" class="extype" name="bigglue.platforms.instances.bigactors.BigActorWorker">BigActorWorker</a>s to be computed, keeping track of time.</p></div><dl class="paramcmts block"><dt class="tparam">Input</dt><dd class="cmt"><p>The type of the data that's being sent in. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd><dt class="tparam">Output</dt><dd class="cmt"><p>The type of the data that's being sent out. This needs to be an <span class="extype" name="Identifiable">Identifiable</span> type.</p></dd></dl></div>
     </li></ol>
             </div>
 
