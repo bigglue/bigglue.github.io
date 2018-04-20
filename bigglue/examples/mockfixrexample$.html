@@ -355,13 +355,7 @@ Finally, we run <a href="../pipes/Pipe.html#persist():Unit" class="extmbr" name=
         <span class="name">IStringToGitID</span><span class="params">(<span name="i">i: <a href="../data/I.html" class="extype" name="bigglue.data.I">I</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a></span>
       </span>
       
-      <p class="shortcomment cmt">def IStringToGitID(i: I[String]): GitID = {
-   val slash = i.a.indexOf('/')
-   GitID(i.a.substring(0, slash), i.a.substring(slash+1))
- }</p><div class="fullcomment"><div class="comment cmt"><p>def IStringToGitID(i: I[String]): GitID = {
-   val slash = i.a.indexOf('/')
-   GitID(i.a.substring(0, slash), i.a.substring(slash+1))
- }</p><p>This is literally just a serialization thing done here just so we have some sort of data to work with.</p></div><dl class="paramcmts block"><dt class="param">i</dt><dd class="cmt"><p>The string of the User and Github Repo</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a> from i.</p></dd></dl></div>
+      <p class="shortcomment cmt">This is literally just a serialization thing done here just so we have some sort of data to work with.</p><div class="fullcomment"><div class="comment cmt"><p>This is literally just a serialization thing done here just so we have some sort of data to work with.</p></div><dl class="paramcmts block"><dt class="param">i</dt><dd class="cmt"><p>The string of the User and Github Repo</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="GitID.html" class="extype" name="bigglue.examples.GitID">GitID</a> from i.</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -517,22 +511,7 @@ Finally, we run <a href="../pipes/Pipe.html#persist():Unit" class="extmbr" name=
         <span class="name">main</span><span class="params">(<span name="args">args: <a href="http://www.scala-lang.org/api/2.12.3/scala/Array.html#scala.Array" class="extype" name="scala.Array">Array</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.3/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <p class="shortcomment cmt">val config = <span class="extype" name="PipeConfig.newConfig()">PipeConfig.newConfig()</span>
-val textMap = new <span class="extype" name="TextFileDataMap">TextFileDataMap</span>(&quot;src/main/mockfixrexample/firstOne.txt&quot;)
-val gitID = new <span class="extype" name="SolrDataMap">SolrDataMap</span>[GitID, GitID](GitIDSerializer, &quot;GitIDs&quot;)
-textMap.all().foreach{
-  input =&gt; val gID = <a href="#IStringToGitID(i:bigglue.data.I[String]):bigglue.examples.GitID" class="extmbr" name="bigglue.examples.mockfixrexample#IStringToGitID">IStringToGitID</a>(input)
-    gitID.put_(gID, gID)
-}
-val clonedMap = new SolrDataMap[GitRepo, GitRepo](GitRepoSerializer, &quot;GitRepos&quot;)
-val commitInfoMap = new SolrDataMap[GitCommitInfo, GitCommitInfo](GitCommitInfoSerializer, &quot;GitCommitInfo&quot;)
-val authorMap = new SolrDataMap[Identity[GitCommitGroups], GitCommitGroups](GitCommitGroupSerializer, &quot;GitAuthors&quot;)
-//val featureMap = new SolrDataMap[GitFeatures, GitFeatures](GitFeatureSerializer, &quot;GitFeatures&quot;)
-import bigglue.pipes.Implicits._
-val pipe = gitID:--Clone()--&gt;clonedMap:--CommitExtraction()--&gt;commitInfoMap:-+FindAuthor()+-&gt;authorMap //:--FeatureExtraction()--&gt;featureMap
-pipe.check(config)
-pipe.init(config)
-pipe.persist()</p>
+      <p class="shortcomment cmt">Configuration File in resources/application.conf</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
